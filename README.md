@@ -91,6 +91,22 @@ cd ~/lab05-$MYGIT/HADHA
 pwd  
 (Create new directory with gene family name, go to that directory, and make sure in that directory)
 
+echo "(((((((((G.gallus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial:0.2566511529, ...
+...);" > ~/lab05-$MYGIT/HADHA.tree  
+(Creates a newick-formatted species tree based on hardcorded branch lengths and topology, save it as a newly named file)
+
+nw_display ~/lab05-$MYGIT/HADHA.tree  
+(Displays the newick-formatted species tree of specified gene family, in this case HADHA)
+
+nw_display -s ~/lab05-$MYGIT/HADHA.tree > ~/lab05-$MYGIT/HADHA.tree.svg 
+(Generates graphic of the species tree and saves it into SVG format)
+
+convert ~/lab05-$MYGIT/HADHA.tree.svg ~/lab05-$MYGIT/HADHA.tree.pdf 
+(Converts the SVG species tree to a PDF)
+
+Rscript --vanilla ~/lab05-$MYGIT/plotUnrooted.R ~/lab05-$MYGIT/HADHA.tree ~/lab05-$MYGIT/HADHA.unrooted.pdf 0.4 35  
+(Using R script to plot the unrooted species tree based on the specified parameters and save it as a PDF file)
+
 sed 's/ /_/g'  ~/lab04-$MYGIT/HADHA/HADHA.homologs.al.fas | seqkit grep -v -r -p "dupelabel" >  ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.fas  
 (Remove sequences from the alignment that contains a duplicate tag or with the "dupelabel", replace the spaces with underscores in the alignment, save file as a copy)
 
@@ -104,35 +120,32 @@ Rscript --vanilla ~/lab05-$MYGIT/plotUnrooted.R  ~/lab05-$MYGIT/HADHA/HADHA.homo
 (Generates a PDF of the unrooted tree using R script, allows the view of the tree with a graphical display, given specific scaling and margins based on the numerical values)
 
 gotree reroot midpoint -i ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.fas.treefile -o ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile  
-(
+(Reroots the tree at the midpoint and saves this to a newly named file, midpoint rooting)
 
 nw_order -c n ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile  | nw_display -  
-
-convert  ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile.svg  ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile.pdf  
+(Reorders the nodes in the midpoint rooted tree, displays it so it can be seen, newick formatted)
 
 nw_order -c n ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile | nw_display -w 1000 -b 'opacity:0' -s > ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile.svg -  
+(Generate graphic of the tree, creating an SVG file of the rerooted tree with specified settings)
 
 convert  ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile.svg  ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile.pdf  
+(Converts the generated graphic of the rerooted tree from SVG to PDF)
 
 nw_order -c n ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile | nw_topology - | nw_display -s -w 1000 > ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.midCl.treefile.svg -  
+(Switches the view to a cladogram, provides a collapsed tree for easier visualization, save as SVG)
 
 convert ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.midCl.treefile.svg ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.midCl.treefile.pdf  
+(Converts this collapsed tree from SVG to PDF)
 
 nw_reroot ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.fas.treefile H.sapiens_HBG1_hemoglobin_subunit_gamma1 H.sapiens_HBG2_hemoglobin_subunit_gamma2 H.sapiens_HBB_hemoglobin_subunit_beta H.sapiens_HBD_hemoglobin_subunit_delta > ~/lab05-$MYGIT/HADHA/HADHA.homologsf.outgroupbeta.treefile  
+(Reroot the tree using outgroup rooting, using specific sequences as an outgroup based on common ancestry, save as a newly named file)
 
 nw_order -c n ~/lab05-$MYGIT/HADHA/HADHA.homologsf.outgroupbeta.treefile | nw_topology - | nw_display -s -w 1000 > ~/lab05-$MYGIT/HADHA/HADHA.homologsf.outgroupbeta.treefile.svg -  
+(Generate a graphic of the newly created outgroup rooted tree and save it as a SVG)
 
 convert ~/lab05-$MYGIT/HADHA/HADHA.homologsf.outgroupbeta.treefile.svg ~/lab05-$MYGIT/HADHA/HADHA.homologsf.outgroupbeta.treefile.pdf  
+(Convert the outgroup rooted tree from an SVG to a PDF)
 
-echo "(((((((((G.gallus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial:0.2566511529, ...
-...);" > ~/lab05-$MYGIT/HADHA.tree  
-
-nw_display ~/lab05-$MYGIT/HADHA.tree  
-
-nw_display -s ~/lab05-$MYGIT/HADHA.tree > ~/lab05-$MYGIT/HADHA.tree.svg  
-
-convert ~/lab05-$MYGIT/HADHA.tree.svg ~/lab05-$MYGIT/HADHA.tree.pdf  
-
-Rscript --vanilla ~/lab05-$MYGIT/plotUnrooted.R ~/lab05-$MYGIT/HADHA.tree ~/lab05-$MYGIT/HADHA.unrooted.pdf 0.4 35  
-
+# Step 4:  
+Commands: 
 
