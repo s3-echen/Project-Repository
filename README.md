@@ -146,6 +146,76 @@ nw_order -c n ~/lab05-$MYGIT/HADHA/HADHA.homologsf.outgroupbeta.treefile | nw_to
 convert ~/lab05-$MYGIT/HADHA/HADHA.homologsf.outgroupbeta.treefile.svg ~/lab05-$MYGIT/HADHA/HADHA.homologsf.outgroupbeta.treefile.pdf  
 (Convert the outgroup rooted tree from an SVG to a PDF)
 
-# Step 4:  
+# Step 4: Reconciliation of Species and Gene Trees
 Commands: 
+
+mkdir ~/lab06-$MYGIT/HADHA
+cd ~/lab06-$MYGIT/HADHA
+pwd  
+(Create new directory with gene family name, go to that directory, and make sure in that directory)
+
+cp ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile ~/lab06-$MYGIT/HADHA/HADHA.homologfs.al.mid.treefile  
+(Copies the tree file of the midpoint rooted tree to this directory)
+
+java -jar ~/tools/Notung-3.0_24-beta/Notung-3.0_24-beta.jar -s ~/lab05-$MYGIT/species.tre -g ~/lab06-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile --reconcile --speciestag prefix --savepng --events --outputdir ~/lab06-$MYGIT/HADHA/  
+(Conducts the reconcilitation of species tree of the gene family HADHA with the gene tree based on the midpoint rooted tree using Notung, this generates PNG and event files)
+
+nw_display ~/lab05-$MYGIT/species.tre  
+(This displays the reconciled species tree)
+
+grep NOTUNG-SPECIES-TREE ~/lab06-$MYGIT/HADHA/HADHA.homologs.al.mid.treefile.rec.ntg | sed -e "s/^\[&&NOTUNG-SPECIES-TREE//" -e "s/\]/;/" | nw_display -  
+(This extracts the reconciled tree that was generated from Notung and displays it, showing the node names)
+
+python2.7 ~/tools/recPhyloXML/python/NOTUNGtoRecPhyloXML.py -g ~/lab06-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile.rec.ntg --include.species  
+(This converts the reconciled tree into RecPhyloXML format)
+
+thirdkind -Iie -D 40 -f ~/lab06-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile.rec.ntg.xml -o ~/lab06-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile.rec.svg  
+(Generates a graphic of the reconciled tree, into an SVG)
+
+convert -density 150 ~/lab06-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile.rec.svg ~/lab06-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile.rec.pdf 
+(Converts the SVG file of the reconciled tree to a PDF)
+
+less HADHA.homologsf.al.mid.treefile.rec.events.txt  
+(This allows the view of the duplications and losses in numerical format, can be used to determine the score(cost) of the reconciliation)
+
+# Step 5: Protein Domain Analysis
+Commands: 
+
+mkdir ~/lab08-$MYGIT/HADHA && cd ~/lab08-$MYGIT/HADHA
+pwd  
+(Create new directory with gene family name, go to that directory, and make sure in that directory)
+
+sed 's/*//' ~/lab04-$MYGIT/HADHA/HADHA.homologs.fas > ~/lab08-$MYGIT/HADHA/HADHA.homologs.fas  
+(Make a copy of the raw unaligned sequences, removing the * or stop codon, save it to the new directory)
+
+rpsblast -query ~/lab08-$MYGIT/HADHA/HADHA.homologs.fas -db ~/data/Pfam/Pfam -out ~/lab08-$MYGIT/HADHA/HADHA.rps-blast.out -outfmt "6 qseqid qlen qstart qend evalue stitle" -evalue .0000000001  
+(Conducts RPS-BLAST on the homologous sequences with specific output format and e-value parameters, this uses the Pfam database for the RPS-BLAST)
+
+rpsblast -query ~/lab08-$MYGIT/HADHA/HADHA.homologs.fas -db ~/data/Pfam/Pfam -out ~/lab08-$MYGIT/HADHA/HADHA.rps-blast.out -outfmt "6 qseqid qlen qstart qend evalue stitle" -evalue .1  
+(Same RPS-BLAST conducted, but verifying the effect of the change in the e-value and why it should be lower)
+
+cp ~/lab05-$MYGIT/HADHA/HADHA.homologsf.outgroupbeta.treefile ~/lab08-$MYGIT/HADHA  
+(Copies the outgroup rooted tree that was previously created to this directory)
+
+cp ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile ~/lab08-$MYGIT/HADHA  
+(Copies the midpoint rooted tree that was previously created to this directory)
+
+Rscript --vanilla ~/lab08-$MYGIT/plotTreeAndDomains.r ~/lab08-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile ~/lab08-$MYGIT/HADHA/HADHA.rps-blast.out ~/lab08-$MYGIT/HADHA/HADHA.tree.rps.pdf  
+(This generates a phylogenetic tree that contains domain information on the side or domain annotations, this is done using R script and saves the file as a PDF)
+
+mlr --inidx --ifs "\t" --opprint cat ~/lab08-$MYGIT/HADHA/HADHA.rps-blast.out | tail -n +2 | less -S  
+(This uses Miller or mlr to view the output generated from the RPS-BLAST, it generates a nicely formatted and interactive view of the output)
+
+cut -f 1 ~/lab08-$MYGIT/HADHA/HADHA.rps-blast.out | sort | uniq -c  
+(Counting the unique query IDs in the RPS-BLAST output, counting the protiens that do not have any annotations)
+
+cut -f 6 ~/lab08-$MYGIT/HADHA/HADHA.rps-blast.out | sort | uniq -c  
+(Allows for the count of the most commonly found Pfam domain annotations)
+
+awk '{a=$4-$3; print $1, "\t", a;}' ~/lab08-$MYGIT/HADHA/HADHA.rps-blast.out | sort -k2nr  
+(Determines the alignment length for each query and sorts it by descending length, used to determine which protein has the longest annotated protein domain)
+
+cut -f 1,5 -d $'\t' ~/lab08-$MYGIT/HADHA/HADHA.rps-blast.out  
+(Pulls out the e-values for each of the protein domains and can be used to determine which domain annotation has the best or worst e-value)
+
 
