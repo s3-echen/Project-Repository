@@ -4,7 +4,7 @@ This document contains all the necessary commands needed to replicate the analys
 # Step 1: Finding Homologs 
 Commands:
 mkdir ~/lab03-$MYGIT/HADHA
-//Create the working directory for gene family name
+//  Create the working directory for gene family name
 cd ~/lab03-$MYGIT/HADHA
 //Go to that directory, in this case HADHA
 pwd
