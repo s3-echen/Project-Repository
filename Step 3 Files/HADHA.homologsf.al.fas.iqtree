@@ -1,0 +1,399 @@
+IQ-TREE 2.3.6 built Aug  1 2024
+
+Input file name: /home/bio312-user/lab05-s3-echen/HADHA/HADHA.homologsf.al.fas
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 596798
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 36 sequences with 1066 amino-acid sites
+Number of constant sites: 333 (= 31.2383% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 333 (= 31.2383% of all sites)
+Number of parsimony informative sites: 636
+Number of distinct site patterns: 875
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: Q.plant+I+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+Q.plant+I+G4     -20488.143   41118.286 +    0.302   41128.572 +    0.857   41471.275 +     0.74
+Q.plant+G4       -20492.735   41125.469 -  0.00832   41135.459 -   0.0274   41473.486 +    0.245
+LG+I+G4          -20493.159   41128.318 -    0.002   41138.604 -  0.00569   41481.306 -  0.00491
+Q.pfam+I+G4      -20493.325   41128.649 -   0.0017   41138.935 -  0.00482   41481.638 -  0.00416
+Q.pfam+G4        -20496.995   41133.989 - 0.000117   41143.979 - 0.000387   41482.006 -  0.00346
+LG+G4            -20497.385   41134.770 - 7.95e-05   41144.760 - 0.000262   41482.787 -  0.00234
+LG+I+R3          -20490.949   41129.897 - 0.000908   41141.098 -  0.00163   41497.801 - 1.29e-06
+LG+R4            -20487.959   41125.917 -  0.00665   41137.433 -   0.0102   41498.793 - 7.83e-07
+LG+I+R4          -20486.265   41124.531 -   0.0133   41136.365 -   0.0174   41502.377 -  1.3e-07
+LG+R5            -20487.572   41129.144 -  0.00132   41141.302 -  0.00148   41511.963 - 1.08e-09
+LG+R3            -20502.028   41150.056 - 3.81e-08   41160.948 -    8e-08   41512.988 - 6.48e-10
+JTTDCMut+I+G4    -20513.117   41168.234 -  4.3e-12   41178.519 - 1.22e-11   41521.222 - 1.06e-11
+JTTDCMut+G4      -20519.187   41178.373 -  2.7e-14   41188.363 - 8.91e-14   41526.390 - 7.97e-13
+JTT+I+G4         -20518.244   41178.487 - 2.55e-14   41188.773 - 7.26e-14   41531.476 - 6.26e-14
+JTT+G4           -20524.285   41188.570 - 1.65e-16   41198.560 - 5.44e-16   41536.587 - 4.86e-15
+LG+I+R2          -20526.079   41196.158 - 3.72e-18   41206.744 - 9.09e-18   41554.118 - 7.59e-19
+LG+F+I+G4        -20468.397   41116.795 +    0.636   41133.595 +   0.0696   41564.245 -  4.8e-21
+LG+F+G4          -20472.523   41123.045 -   0.0279   41139.459 -  0.00371   41565.524 - 2.53e-21
+Q.insect+I+G4    -20537.885   41217.769 - 7.54e-23   41228.055 - 2.14e-22   41570.758 - 1.85e-22
+Q.insect+G4      -20542.168   41224.335 - 2.83e-24   41234.325 - 9.32e-24   41572.352 - 8.33e-23
+LG+R2            -20554.853   41251.705 - 3.22e-30   41261.991 - 9.16e-30   41604.694 -  7.9e-30
+Q.pfam+F+G4      -20493.021   41164.043 -  3.5e-11   41180.457 - 4.64e-12   41606.521 - 3.17e-30
+Q.pfam+F+I+G4    -20489.787   41159.573 - 3.27e-10   41176.373 - 3.58e-11   41607.023 - 2.47e-30
+Q.plant+F+I+G4   -20494.154   41168.307 - 4.15e-12   41185.107 - 4.54e-13   41615.757 - 3.13e-32
+Q.plant+F+G4     -20498.791   41175.582 - 1.09e-13   41191.996 - 1.45e-14   41618.060 - 9.89e-33
+WAG+I+G4         -20566.334   41274.668 - 3.33e-35   41284.953 - 9.45e-35   41627.656 - 8.16e-35
+Q.yeast+F+I+G4   -20502.081   41184.163 -  1.5e-15   41200.963 - 1.64e-16   41631.613 - 1.13e-35
+Q.yeast+F+G4     -20506.123   41190.246 - 7.14e-17   41206.660 - 9.48e-18   41632.724 - 6.47e-36
+WAG+G4           -20573.679   41287.358 - 5.84e-38   41297.348 - 1.92e-37   41635.375 - 1.72e-36
+Q.yeast+I+G4     -20578.902   41299.804 - 1.16e-40   41310.090 - 3.29e-40   41652.793 - 2.84e-40
+Q.yeast+G4       -20582.783   41305.566 - 6.49e-42   41315.556 - 2.14e-41   41653.583 - 1.91e-40
+Q.insect+F+I+G4  -20513.152   41206.304 - 2.33e-20   41223.104 - 2.55e-21   41653.754 - 1.76e-40
+Q.insect+F+G4    -20517.630   41213.261 - 7.18e-22   41229.675 - 9.53e-23   41655.739 - 6.51e-41
+JTTDCMut+F+I+G4  -20517.123   41214.246 - 4.39e-22   41231.046 -  4.8e-23   41661.696 - 3.31e-42
+JTTDCMut+F+G4    -20522.548   41223.095 - 5.26e-24   41239.509 - 6.97e-25   41665.574 - 4.76e-43
+JTT+F+I+G4       -20524.268   41228.536 - 3.46e-25   41245.336 - 3.79e-26   41675.986 - 2.61e-45
+JTT+F+G4         -20529.701   41237.403 - 4.11e-27   41253.817 - 5.45e-28   41679.881 - 3.72e-46
+WAG+F+I+G4       -20560.878   41301.756 - 4.36e-41   41318.556 - 4.77e-42   41749.206 - 3.29e-61
+WAG+F+G4         -20567.360   41312.720 - 1.81e-43   41329.134 - 2.41e-44   41755.199 - 1.64e-62
+VT+I+G4          -20633.854   41409.709 - 1.58e-64   41419.994 - 4.48e-64   41762.697 - 3.87e-64
+VT+G4            -20639.283   41418.566 - 1.88e-66   41428.556 -  6.2e-66   41766.582 - 5.55e-65
+rtREV+F+I+G4     -20592.114   41364.228 - 1.19e-54   41381.028 -  1.3e-55   41811.679 - 8.95e-75
+rtREV+F+G4       -20596.101   41370.202 - 5.98e-56   41386.615 - 7.94e-57   41812.680 - 5.42e-75
+Q.mammal+I+G4    -20664.817   41471.635 - 5.64e-78   41481.921 -  1.6e-77   41824.623 - 1.38e-77
+Q.mammal+G4      -20670.558   41481.117 - 4.92e-80   41491.107 - 1.62e-79   41829.133 - 1.45e-78
+Dayhoff+I+G4     -20685.483   41512.967 - 5.97e-87   41523.253 -  1.7e-86   41865.955 - 1.46e-86
+DCMut+I+G4       -20686.887   41515.774 - 1.47e-87   41526.060 - 4.17e-87   41868.763 -  3.6e-87
+cpREV+I+G4       -20690.311   41522.622 - 4.78e-89   41532.907 - 1.36e-88   41875.610 - 1.17e-88
+Dayhoff+G4       -20694.597   41529.195 - 1.79e-90   41539.185 - 5.89e-90   41877.212 - 5.26e-89
+DCMut+G4         -20695.997   41531.993 - 4.41e-91   41541.983 - 1.45e-90   41880.010 -  1.3e-89
+cpREV+G4         -20696.611   41533.223 - 2.38e-91   41543.213 - 7.86e-91   41881.239 - 7.02e-90
+VT+F+I+G4        -20634.672   41449.343 -  3.9e-73   41466.143 - 4.27e-74   41896.793 - 2.95e-93
+VT+F+G4          -20639.723   41457.447 - 6.79e-75   41473.861 - 9.01e-76   41899.925 - 6.15e-94
+rtREV+I+G4       -20719.449   41580.899 - 1.06e-101   41591.185 - 3.01e-101   41933.887 - 2.6e-101
+rtREV+G4         -20723.574   41587.148 - 4.65e-103   41597.138 - 1.53e-102   41935.165 - 1.37e-101
+Dayhoff+F+I+G4   -20659.307   41498.614 - 7.81e-84   41515.414 - 8.54e-85   41946.064 - 5.89e-104
+cpREV+F+I+G4     -20659.867   41499.735 - 4.46e-84   41516.535 - 4.88e-85   41947.185 - 3.36e-104
+DCMut+F+I+G4     -20660.605   41501.209 - 2.13e-84   41518.009 - 2.33e-85   41948.660 - 1.61e-104
+Dayhoff+F+G4     -20666.950   41511.899 - 1.02e-86   41528.313 - 1.35e-87   41954.378 - 9.22e-106
+cpREV+F+G4       -20667.522   41513.045 - 5.74e-87   41529.459 - 7.62e-88   41955.523 - 5.2e-106
+DCMut+F+G4       -20668.246   41514.492 - 2.78e-87   41530.905 -  3.7e-88   41956.970 - 2.52e-106
+mtInv+F+I+G4     -20680.887   41541.774 - 3.31e-93   41558.574 - 3.63e-94   41989.224 - 2.5e-113
+mtInv+F+G4       -20684.733   41547.466 - 1.92e-94   41563.880 - 2.55e-95   41989.945 - 1.74e-113
+Q.bird+I+G4      -20761.824   41665.648 - 4.18e-120   41675.934 - 1.19e-119   42018.637 - 1.03e-119
+Q.bird+G4        -20767.667   41675.335 - 3.3e-122   41685.325 - 1.09e-121   42023.352 - 9.71e-121
+Q.mammal+F+I+G4  -20723.768   41627.536 - 7.9e-112   41644.336 - 8.64e-113   42074.986 - 5.96e-132
+Q.mammal+F+G4    -20728.201   41634.402 - 2.55e-113   41650.816 - 3.38e-114   42076.881 - 2.31e-132
+mtMet+F+G4       -20762.360   41702.721 - 3.73e-128   41719.135 - 4.95e-129   42145.199 - 3.38e-147
+mtMet+F+I+G4     -20759.012   41698.023 - 3.9e-127   41714.823 - 4.27e-128   42145.473 - 2.94e-147
+Blosum62+I+G4    -20827.049   41796.099 - 1.97e-148   41806.384 - 5.6e-148   42149.087 - 4.83e-148
+Blosum62+G4      -20831.792   41803.584 - 4.67e-150   41813.574 - 1.54e-149   42151.601 - 1.38e-148
+PMB+I+G4         -20831.935   41805.871 - 1.49e-150   41816.157 - 4.23e-150   42158.859 - 3.65e-150
+PMB+G4           -20836.345   41812.691 - 4.92e-152   41822.681 - 1.62e-151   42160.708 - 1.45e-150
+mtZOA+F+I+G4     -20784.243   41748.485 - 4.3e-138   41765.285 - 4.71e-139   42195.936 - 3.25e-158
+mtZOA+F+G4       -20787.845   41753.689 - 3.19e-139   41770.103 - 4.23e-140   42196.168 - 2.89e-158
+mtREV+F+I+G4     -20799.172   41778.344 - 1.41e-144   41795.144 - 1.55e-145   42225.794 - 1.07e-164
+mtREV+F+G4       -20804.288   41786.575 - 2.3e-146   41802.989 - 3.06e-147   42229.054 - 2.09e-165
+Blosum62+F+I+G4  -20822.480   41824.961 - 1.06e-154   41841.761 - 1.16e-155   42272.411 - 8.03e-175
+Blosum62+F+G4    -20827.642   41833.284 - 1.66e-156   41849.698 - 2.2e-157   42275.762 - 1.5e-175
+Q.bird+F+I+G4    -20825.448   41830.896 - 5.48e-156   41847.696 - 5.99e-157   42278.346 - 4.13e-176
+Q.bird+F+G4      -20830.373   41838.747 - 1.08e-157   41855.161 - 1.43e-158   42281.225 - 9.79e-177
+PMB+F+I+G4       -20832.901   41845.801 - 3.17e-159   41862.601 - 3.47e-160   42293.252 - 2.4e-179
+PMB+F+G4         -20837.525   41853.050 - 8.47e-161   41869.463 - 1.12e-161   42295.528 - 7.67e-180
+FLU+F+I+G4       -20852.952   41885.904 - 6.22e-168   41902.704 - 6.8e-169   42333.354 - 4.69e-188
+FLU+F+G4         -20859.601   41897.201 - 2.19e-170   41913.615 - 2.91e-171   42339.680 - 1.98e-189
+LG+I             -20928.755   41997.511 - 3.62e-192   42007.501 - 1.19e-191   42345.527 - 1.07e-190
+HIVb+F+I+G4      -20895.978   41971.956 - 1.28e-186   41988.756 - 1.4e-187   42419.406 - 9.67e-207
+HIVb+F+G4        -20902.913   41983.827 - 3.39e-189   42000.241 - 4.5e-190   42426.305 - 3.07e-208
+FLU+I+G4         -20982.314   42106.629 - 7.31e-216   42116.915 - 2.08e-215   42459.617 - 1.79e-215
+FLU+G4           -20989.204   42118.407 - 2.02e-218   42128.397 - 6.67e-218   42466.424 - 5.96e-217
+HIVb+I+G4        -21015.129   42172.258 - 4.1e-230   42182.544 - 1.16e-229   42525.247 - 1.01e-229
+HIVb+G4          -21022.925   42185.851 - 4.58e-233   42195.841 - 1.51e-232   42533.867 - 1.35e-231
+mtVer+F+G4       -20961.130   42100.260 - 1.76e-214   42116.674 - 2.34e-215   42542.739 - 1.6e-233
+mtVer+F+I+G4     -20957.812   42095.625 - 1.79e-213   42112.425 - 1.96e-214   42543.075 - 1.35e-233
+LG               -21129.150   42396.300 - 9.17e-279   42405.998 - 3.5e-278   42739.345 - 3.25e-276
+mtART+F+I+G4     -21086.873   42353.747 - 1.6e-269   42370.547 - 1.75e-270   42801.197 - 1.2e-289
+mtART+F+G4       -21090.665   42359.330 - 9.78e-271   42375.744 - 1.3e-271   42801.809 - 8.86e-290
+mtMAM+F+I+G4     -21171.669   42523.339 - 2.38e-306   42540.139 - 2.6e-307   42970.789 -        0
+mtMAM+F+G4       -21176.404   42530.808 - 5.68e-308   42547.221 - 7.54e-309   42973.286 -        0
+FLAVI+F+I+G4     -21183.741   42547.482 - 1.36e-311   42564.282 - 1.49e-312   42994.932 -        0
+FLAVI+F+G4       -21189.572   42557.144 - 1.09e-313   42573.558 - 1.44e-314   42999.622 -        0
+FLAVI+I+G4       -21258.237   42658.474 -        0   42668.759 -        0   43011.462 -        0
+FLAVI+G4         -21263.139   42666.278 -        0   42676.268 -        0   43014.295 -        0
+mtZOA+G4         -21373.339   42886.677 -        0   42896.667 -        0   43234.694 -        0
+mtZOA+I+G4       -21371.508   42885.016 -        0   42895.301 -        0   43238.004 -        0
+HIVw+F+I+G4      -21451.774   43083.548 -        0   43100.348 -        0   43530.998 -        0
+HIVw+F+G4        -21465.449   43108.899 -        0   43125.313 -        0   43551.377 -        0
+mtMet+G4         -21641.729   43423.458 -        0   43433.448 -        0   43771.475 -        0
+mtMet+I+G4       -21640.377   43422.754 -        0   43433.040 -        0   43775.743 -        0
+mtREV+I+G4       -21658.345   43458.690 -        0   43468.976 -        0   43811.679 -        0
+mtREV+G4         -21662.030   43464.059 -        0   43474.049 -        0   43812.076 -        0
+mtVer+G4         -21773.735   43687.469 -        0   43697.459 -        0   44035.486 -        0
+mtVer+I+G4       -21773.157   43688.314 -        0   43698.600 -        0   44041.303 -        0
+mtInv+G4         -21796.669   43733.337 -        0   43743.327 -        0   44081.354 -        0
+mtInv+I+G4       -21794.768   43731.536 -        0   43741.821 -        0   44084.524 -        0
+HIVw+I+G4        -21800.417   43742.833 -        0   43753.119 -        0   44095.822 -        0
+HIVw+G4          -21814.856   43769.712 -        0   43779.702 -        0   44117.729 -        0
+mtART+G4         -21943.420   44026.841 -        0   44036.831 -        0   44374.858 -        0
+mtART+I+G4       -21941.489   44024.977 -        0   44035.263 -        0   44377.966 -        0
+mtMAM+G4         -22088.034   44316.069 -        0   44326.059 -        0   44664.086 -        0
+mtMAM+I+G4       -22086.533   44315.066 -        0   44325.352 -        0   44668.054 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: Q.plant+I+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.0494
+Gamma shape alpha: 1.1493
+
+ Category  Relative_rate  Proportion
+  0         0              0.0494
+  1         0.1743         0.2377
+  2         0.5443         0.2377
+  3         1.0739         0.2377
+  4         2.4151         0.2377
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -20470.9299 (s.e. 525.5169)
+Unconstrained log-likelihood (without tree): -7032.3378
+Number of free parameters (#branches + #model parameters): 71
+Akaike information criterion (AIC) score: 41083.8597
+Corrected Akaike information criterion (AICc) score: 41094.1454
+Bayesian information criterion (BIC) score: 41436.8482
+
+Total tree length (sum of branch lengths): 11.9990
+Sum of internal branch lengths: 7.5612 (63.0151% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'G.gallus_EHHADH_peroxisomal_bifunctional_enzyme_isoform_X2' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--G.gallus_EHHADH_peroxisomal_bifunctional_enzyme_isoform_X2
+|
+|                 +--S.salar_ehhadh_peroxisomal_bifunctional_enzyme
+|              +--| (100)
+|              |  +--G.aculeatus_ehhadh_peroxisomal_bifunctional_enzyme
+|           +--| (100)
+|           |  +--D.rerio_ehhadh_peroxisomal_bifunctional_enzyme
+|        +--| (97)
+|        |  |                                                        +--D.rerio_hadhaa_hydroxyacylCoA_dehydrogenase_trifunctional_multien
+|        |  |                                                     +--| (99)
+|        |  |                                                     |  |     +--G.aculeatus_hadhab_hydroxyacylCoA_dehydrogenase_trifunctional_mul
+|        |  |                                                     |  |  +--| (96)
+|        |  |                                                     |  |  |  |  +--S.salar_LOC106611334_trifunctional_enzyme_subunit_alpha_mitochond
+|        |  |                                                     |  |  |  +--| (100)
+|        |  |                                                     |  |  |     +--S.salar_hadhab_hydroxyacylCoA_dehydrogenase_trifunctional_multien
+|        |  |                                                     |  +--| (89)
+|        |  |                                                     |     +--D.rerio_hadhab_hydroxyacylCoA_dehydrogenase_trifunctional_multien
+|        |  |                                                  +--| (93)
+|        |  |                                                  |  +--C.carcharias_LOC121278346_trifunctional_enzyme_subunit_alpha_mito
+|        |  |                                               +--| (60)
+|        |  |                                               |  |  +--X.laevis_hadha.L_trifunctional_enzyme_subunit_alpha_mitochondrial
+|        |  |                                               |  +--| (100)
+|        |  |                                               |     +--X.laevis_hadha.S_hydroxyacylCoA_dehydrogenase_trifunctional_multi
+|        |  |                                            +--| (54)
+|        |  |                                            |  |     +--E.caballus_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial
+|        |  |                                            |  |  +--| (86)
+|        |  |                                            |  |  |  +--H.sapiens_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial_
+|        |  |                                            |  +--| (99)
+|        |  |                                            |     +--F.catus_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial
+|        |  |                                         +--| (54)
+|        |  |                                         |  +--S.townsendi_HADHA_trifunctional_enzyme_subunit_alpha_mitochondria
+|        |  |                                      +--| (69)
+|        |  |                                      |  +--C.mydas_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial_is
+|        |  |                    +-----------------| (100)
+|        |  |                    |                 +--G.gallus_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial
+|        |  +--------------------| (100)
+|        |                       |                                         +--G.gallus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial
+|        |                       |                                      +--| (95)
+|        |                       |                                      |  +--S.townsendi_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondria
+|        |                       |                                   +--| (90)
+|        |                       |                                   |  +--C.mydas_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial
+|        |                       |                                +--| (85)
+|        |                       |                                |  +--X.laevis_hadh.L_hydroxyacylCoA_dehydrogenase_L_homeolog
+|        |                       |                             +--| (95)
+|        |                       |                             |  |     +--H.sapiens_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial_
+|        |                       |                             |  |  +--| (67)
+|        |                       |                             |  |  |  +--E.caballus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial
+|        |                       |                             |  +--| (100)
+|        |                       |                             |     +--F.catus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial
+|        |                       |                          +--| (86)
+|        |                       |                          |  +--C.carcharias_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondri
+|        |                       |                       +--| (86)
+|        |                       |                       |  +--D.rerio_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial
+|        |                       |                    +--| (86)
+|        |                       |                    |  |  +**S.salar_LOC106610339_hydroxyacylcoenzyme_A_dehydrogenase_mitochon
+|        |                       |                    |  +--| (100)
+|        |                       |                    |     +--S.salar_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial
+|        |                       +--------------------| (100)
+|        |                                            +--G.aculeatus_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondria
+|     +--| (100)
+|     |  +----X.laevis_ehhadh.S_peroxisomal_bifunctional_enzyme
+|  +--| (98)
+|  |  |      +--F.catus_EHHADH_peroxisomal_bifunctional_enzyme
+|  |  |   +--| (97)
+|  |  |   |  +--H.sapiens_EHHADH_peroxisomal_bifunctional_enzyme_isoform_1
+|  |  +---| (100)
+|  |      +--E.caballus_EHHADH_peroxisomal_bifunctional_enzyme
++--| (91)
+|  +--S.townsendi_EHHADH_peroxisomal_bifunctional_enzyme
+|
++--C.mydas_EHHADH_peroxisomal_bifunctional_enzyme
+
+Tree in newick format:
+
+(G.gallus_EHHADH_peroxisomal_bifunctional_enzyme_isoform_X2:0.3006915033,((((((S.salar_ehhadh_peroxisomal_bifunctional_enzyme:0.2167696302,G.aculeatus_ehhadh_peroxisomal_bifunctional_enzyme:0.2376156209)100:0.1458852707,D.rerio_ehhadh_peroxisomal_bifunctional_enzyme:0.2932282643)100:0.1569964335,((((((((D.rerio_hadhaa_hydroxyacylCoA_dehydrogenase_trifunctional_multien:0.1784215113,((G.aculeatus_hadhab_hydroxyacylCoA_dehydrogenase_trifunctional_mul:0.1037041894,(S.salar_LOC106611334_trifunctional_enzyme_subunit_alpha_mitochond:0.0279858691,S.salar_hadhab_hydroxyacylCoA_dehydrogenase_trifunctional_multien:0.0269486261)100:0.0762051647)96:0.0276285354,D.rerio_hadhab_hydroxyacylCoA_dehydrogenase_trifunctional_multien:0.1204572037)89:0.0370497649)99:0.0994561748,C.carcharias_LOC121278346_trifunctional_enzyme_subunit_alpha_mito:0.2302144399)93:0.0597401265,(X.laevis_hadha.L_trifunctional_enzyme_subunit_alpha_mitochondrial:0.0173796261,X.laevis_hadha.S_hydroxyacylCoA_dehydrogenase_trifunctional_multi:0.0131648734)100:0.0922295043)60:0.0353738900,((E.caballus_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial:0.0293784891,H.sapiens_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial_:0.0640125295)86:0.0228078659,F.catus_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial:0.0466731755)99:0.1590206349)54:0.0342252033,S.townsendi_HADHA_trifunctional_enzyme_subunit_alpha_mitochondria:0.1276495082)54:0.0196703562,C.mydas_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial_is:0.1053149491)69:0.0775398761,G.gallus_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial:0.0365353787)100:1.4611841670,((((((((G.gallus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial:0.2566511529,S.townsendi_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondria:0.1300962602)95:0.0412023111,C.mydas_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial:0.0803916880)90:0.0486290497,X.laevis_hadh.L_hydroxyacylCoA_dehydrogenase_L_homeolog:0.0957547465)85:0.0543271818,((H.sapiens_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial_:0.0438804939,E.caballus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial:0.0633787635)67:0.0176601293,F.catus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial:0.0360249366)100:0.1378782161)95:0.0501826742,C.carcharias_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondri:0.2004825488)86:0.1102158561,D.rerio_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial:0.1045852394)86:0.1076876531,(S.salar_LOC106610339_hydroxyacylcoenzyme_A_dehydrogenase_mitochon:0.0000029930,S.salar_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial:0.0075224794)100:0.1189248141)86:0.1963841020,G.aculeatus_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondria:0.0889712068)100:1.6636146600)100:1.6364460530)97:0.1388083595,X.laevis_ehhadh.S_peroxisomal_bifunctional_enzyme:0.4419228856)100:0.1873321034,((F.catus_EHHADH_peroxisomal_bifunctional_enzyme:0.1004632846,H.sapiens_EHHADH_peroxisomal_bifunctional_enzyme_isoform_1:0.0663138223)97:0.0213393774,E.caballus_EHHADH_peroxisomal_bifunctional_enzyme:0.0821621663)100:0.3777102413)98:0.0931743785,S.townsendi_EHHADH_peroxisomal_bifunctional_enzyme:0.2962076135)91:0.0546468481,C.mydas_EHHADH_peroxisomal_bifunctional_enzyme:0.1668491492);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -20470.925055
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--G.gallus_EHHADH_peroxisomal_bifunctional_enzyme_isoform_X2
+|
+|                 +--S.salar_ehhadh_peroxisomal_bifunctional_enzyme
+|              +--| (100)
+|              |  +--G.aculeatus_ehhadh_peroxisomal_bifunctional_enzyme
+|           +--| (100)
+|           |  +--D.rerio_ehhadh_peroxisomal_bifunctional_enzyme
+|        +--| (97)
+|        |  |                                                        +--D.rerio_hadhaa_hydroxyacylCoA_dehydrogenase_trifunctional_multien
+|        |  |                                                     +--| (99)
+|        |  |                                                     |  |     +--G.aculeatus_hadhab_hydroxyacylCoA_dehydrogenase_trifunctional_mul
+|        |  |                                                     |  |  +--| (96)
+|        |  |                                                     |  |  |  |  +--S.salar_LOC106611334_trifunctional_enzyme_subunit_alpha_mitochond
+|        |  |                                                     |  |  |  +--| (100)
+|        |  |                                                     |  |  |     +--S.salar_hadhab_hydroxyacylCoA_dehydrogenase_trifunctional_multien
+|        |  |                                                     |  +--| (89)
+|        |  |                                                     |     +--D.rerio_hadhab_hydroxyacylCoA_dehydrogenase_trifunctional_multien
+|        |  |                                                  +--| (93)
+|        |  |                                                  |  +--C.carcharias_LOC121278346_trifunctional_enzyme_subunit_alpha_mito
+|        |  |                                               +--| (60)
+|        |  |                                               |  |  +--X.laevis_hadha.L_trifunctional_enzyme_subunit_alpha_mitochondrial
+|        |  |                                               |  +--| (100)
+|        |  |                                               |     +--X.laevis_hadha.S_hydroxyacylCoA_dehydrogenase_trifunctional_multi
+|        |  |                                            +--| (54)
+|        |  |                                            |  |     +--E.caballus_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial
+|        |  |                                            |  |  +--| (86)
+|        |  |                                            |  |  |  +--H.sapiens_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial_
+|        |  |                                            |  +--| (99)
+|        |  |                                            |     +--F.catus_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial
+|        |  |                                         +--| (54)
+|        |  |                                         |  +--S.townsendi_HADHA_trifunctional_enzyme_subunit_alpha_mitochondria
+|        |  |                                      +--| (69)
+|        |  |                                      |  +--C.mydas_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial_is
+|        |  |                    +-----------------| (100)
+|        |  |                    |                 +--G.gallus_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial
+|        |  +--------------------| (100)
+|        |                       |                                         +--G.gallus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial
+|        |                       |                                      +--| (95)
+|        |                       |                                      |  +--S.townsendi_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondria
+|        |                       |                                   +--| (90)
+|        |                       |                                   |  +--C.mydas_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial
+|        |                       |                                +--| (85)
+|        |                       |                                |  +--X.laevis_hadh.L_hydroxyacylCoA_dehydrogenase_L_homeolog
+|        |                       |                             +--| (95)
+|        |                       |                             |  |     +--H.sapiens_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial_
+|        |                       |                             |  |  +--| (67)
+|        |                       |                             |  |  |  +--E.caballus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial
+|        |                       |                             |  +--| (100)
+|        |                       |                             |     +--F.catus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial
+|        |                       |                          +--| (86)
+|        |                       |                          |  +--C.carcharias_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondri
+|        |                       |                       +--| (86)
+|        |                       |                       |  +--D.rerio_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial
+|        |                       |                    +--| (86)
+|        |                       |                    |  |  +--S.salar_LOC106610339_hydroxyacylcoenzyme_A_dehydrogenase_mitochon
+|        |                       |                    |  +--| (100)
+|        |                       |                    |     +--S.salar_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial
+|        |                       +--------------------| (100)
+|        |                                            +--G.aculeatus_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondria
+|     +--| (100)
+|     |  +----X.laevis_ehhadh.S_peroxisomal_bifunctional_enzyme
+|  +--| (98)
+|  |  |      +--F.catus_EHHADH_peroxisomal_bifunctional_enzyme
+|  |  |   +--| (97)
+|  |  |   |  +--H.sapiens_EHHADH_peroxisomal_bifunctional_enzyme_isoform_1
+|  |  +---| (100)
+|  |      +--E.caballus_EHHADH_peroxisomal_bifunctional_enzyme
++--| (91)
+|  +--S.townsendi_EHHADH_peroxisomal_bifunctional_enzyme
+|
++--C.mydas_EHHADH_peroxisomal_bifunctional_enzyme
+
+
+Consensus tree in newick format: 
+
+(G.gallus_EHHADH_peroxisomal_bifunctional_enzyme_isoform_X2:0.3005980484,((((((S.salar_ehhadh_peroxisomal_bifunctional_enzyme:0.2166865430,G.aculeatus_ehhadh_peroxisomal_bifunctional_enzyme:0.2375108450)100:0.1458301209,D.rerio_ehhadh_peroxisomal_bifunctional_enzyme:0.2931029449)100:0.1571231385,((((((((D.rerio_hadhaa_hydroxyacylCoA_dehydrogenase_trifunctional_multien:0.1783235497,((G.aculeatus_hadhab_hydroxyacylCoA_dehydrogenase_trifunctional_mul:0.1036470920,(S.salar_LOC106611334_trifunctional_enzyme_subunit_alpha_mitochond:0.0279721058,S.salar_hadhab_hydroxyacylCoA_dehydrogenase_trifunctional_multien:0.0269342256)100:0.0761718925)96:0.0276216413,D.rerio_hadhab_hydroxyacylCoA_dehydrogenase_trifunctional_multien:0.1203869664)89:0.0370425638)99:0.0994006364,C.carcharias_LOC121278346_trifunctional_enzyme_subunit_alpha_mito:0.2301040291)93:0.0597098740,(X.laevis_hadha.L_trifunctional_enzyme_subunit_alpha_mitochondrial:0.0173721704,X.laevis_hadha.S_hydroxyacylCoA_dehydrogenase_trifunctional_multi:0.0131575022)100:0.0921890475)60:0.0353560615,((E.caballus_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial:0.0293662129,H.sapiens_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial_:0.0639825944)86:0.0227963659,F.catus_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial:0.0466564332)99:0.1589497068)54:0.0342158419,S.townsendi_HADHA_trifunctional_enzyme_subunit_alpha_mitochondria:0.1275897453)54:0.0196558850,C.mydas_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial_is:0.1052563494)69:0.0793487523,G.gallus_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial:0.0348703875)100:1.4610579055,((((((((G.gallus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial:0.2565675736,S.townsendi_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondria:0.1300543075)95:0.0411969945,C.mydas_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial:0.0803667242)90:0.0486152954,X.laevis_hadh.L_hydroxyacylCoA_dehydrogenase_L_homeolog:0.0957245468)85:0.0543134229,((H.sapiens_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial_:0.0438661353,E.caballus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial:0.0633565358)67:0.0176551842,F.catus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial:0.0360135620)100:0.1378372042)95:0.0501679068,C.carcharias_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondri:0.2004090460)86:0.1101801308,D.rerio_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial:0.1045517417)86:0.1076423155,(S.salar_LOC106610339_hydroxyacylcoenzyme_A_dehydrogenase_mitochon:0.0000023458,S.salar_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial:0.0075187624)100:0.1188847726)86:0.1970203437,G.aculeatus_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondria:0.0881310559)100:1.6648074698)100:1.6347556030)97:0.1386386547,X.laevis_ehhadh.S_peroxisomal_bifunctional_enzyme:0.4417389166)100:0.1872702631,((F.catus_EHHADH_peroxisomal_bifunctional_enzyme:0.1004290598,H.sapiens_EHHADH_peroxisomal_bifunctional_enzyme_isoform_1:0.0662892364)97:0.0213342942,E.caballus_EHHADH_peroxisomal_bifunctional_enzyme:0.0821353427)100:0.3775723531)98:0.0931469447,S.townsendi_EHHADH_peroxisomal_bifunctional_enzyme:0.2961097667)91:0.0546391110,C.mydas_EHHADH_peroxisomal_bifunctional_enzyme:0.1667905302);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /home/bio312-user/lab05-s3-echen/HADHA/HADHA.homologsf.al.fas.treefile -m "Q.plant+I{0.0493685}+G4{1.14928}" --length 1066
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/bio312-user/lab05-s3-echen/HADHA/HADHA.homologsf.al.fas --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/bio312-user/lab05-s3-echen/HADHA/HADHA.homologsf.al.fas --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Thu Sep 26 19:55:07 2024
+Total CPU time used: 590.81385 seconds (0h:9m:50s)
+Total wall-clock time used: 302.6151072 seconds (0h:5m:2s)
+

@@ -1,0 +1,330 @@
+IQ-TREE multicore version 2.3.6 for Linux x86 64-bit built Aug  1 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    ip-172-31-28-240.ec2.internal (AVX2, FMA3, 7 GB RAM)
+Command: iqtree -s /home/bio312-user/lab05-s3-echen/HADHA/HADHA.homologsf.al.fas -bb 1000 -nt 2
+Seed:    596798 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Sep 26 19:50:04 2024
+Kernel:  AVX+FMA - 2 threads (2 CPU cores detected)
+
+Reading alignment file /home/bio312-user/lab05-s3-echen/HADHA/HADHA.homologsf.al.fas ... Fasta format detected
+Reading fasta file: done in 0.000756365 secs
+Alignment most likely contains protein sequences
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 36 sequences with 1066 columns, 875 distinct patterns
+636 parsimony-informative, 97 singleton sites, 333 constant sites
+                                                                   Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 7.8291e-05 secs
+   1  G.gallus_EHHADH_peroxisomal_bifunctional_enzyme_isoform_X2          29.46%    passed     15.13%
+   2  S.salar_ehhadh_peroxisomal_bifunctional_enzyme                      32.83%    failed      0.00%
+   3  X.laevis_ehhadh.S_peroxisomal_bifunctional_enzyme                   31.80%    passed     14.70%
+   4  D.rerio_ehhadh_peroxisomal_bifunctional_enzyme                      32.65%    passed      5.68%
+   5  G.aculeatus_ehhadh_peroxisomal_bifunctional_enzyme                  32.55%    failed      0.01%
+   6  F.catus_EHHADH_peroxisomal_bifunctional_enzyme                      32.18%    failed      1.85%
+   7  E.caballus_EHHADH_peroxisomal_bifunctional_enzyme                   32.18%    failed      2.45%
+   8  H.sapiens_EHHADH_peroxisomal_bifunctional_enzyme_isoform_1          32.18%    passed     17.86%
+   9  C.mydas_EHHADH_peroxisomal_bifunctional_enzyme                      31.71%    passed      6.24%
+  10  S.townsendi_EHHADH_peroxisomal_bifunctional_enzyme                  28.80%    passed     36.71%
+  11  D.rerio_hadhaa_hydroxyacylCoA_dehydrogenase_trifunctional_multien   28.61%    passed     88.11%
+  12  C.mydas_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial_is   22.89%    passed     62.23%
+  13  C.carcharias_LOC121278346_trifunctional_enzyme_subunit_alpha_mito   28.33%    passed     75.70%
+  14  X.laevis_hadha.L_trifunctional_enzyme_subunit_alpha_mitochondrial   28.71%    passed     97.64%
+  15  X.laevis_hadha.S_hydroxyacylCoA_dehydrogenase_trifunctional_multi   28.71%    passed     97.29%
+  16  G.gallus_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial     27.77%    passed     88.13%
+  17  G.aculeatus_hadhab_hydroxyacylCoA_dehydrogenase_trifunctional_mul   22.42%    passed     95.15%
+  18  E.caballus_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial   28.52%    passed     93.13%
+  19  S.townsendi_HADHA_trifunctional_enzyme_subunit_alpha_mitochondria   38.27%    passed     50.71%
+  20  F.catus_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial      28.42%    passed     91.73%
+  21  H.sapiens_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial_   28.42%    passed     95.98%
+  22  S.salar_LOC106611334_trifunctional_enzyme_subunit_alpha_mitochond   28.52%    passed     86.95%
+  23  D.rerio_hadhab_hydroxyacylCoA_dehydrogenase_trifunctional_multien   28.42%    passed     87.33%
+  24  S.salar_hadhab_hydroxyacylCoA_dehydrogenase_trifunctional_multien   28.42%    passed     77.89%
+  25  G.gallus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial     64.17%    passed     58.50%
+  26  X.laevis_hadh.L_hydroxyacylCoA_dehydrogenase_L_homeolog             70.64%    passed     54.07%
+  27  C.mydas_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial      70.92%    passed     45.10%
+  28  H.sapiens_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial_   68.95%    passed     25.64%
+  29  E.caballus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial   70.54%    passed     39.36%
+  30  F.catus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial      70.54%    passed     27.52%
+  31  C.carcharias_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondri   71.20%    passed     85.21%
+  32  S.salar_LOC106610339_hydroxyacylcoenzyme_A_dehydrogenase_mitochon   68.39%    passed     39.00%
+  33  G.aculeatus_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondria   67.17%    passed     76.61%
+  34  S.townsendi_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondria   71.01%    passed     51.25%
+  35  D.rerio_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial      71.01%    passed     28.95%
+  36  S.salar_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial      71.01%    passed     59.78%
+WARNING: 12 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                                               43.01%  4 sequences failed composition chi2 test (p-value<5%; df=19)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.013 seconds
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -20494.521
+Optimal log-likelihood: -20493.758
+Proportion of invariable sites: 0.061
+Gamma shape alpha: 1.327
+Parameters optimization took 1 rounds (0.204 sec)
+Time for fast ML tree search: 1.924 seconds
+
+NOTE: ModelFinder requires 53 MB RAM!
+ModelFinder will test up to 1232 protein models (sample size: 1066 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            21129.150    69  42396.300    42405.998    42739.345
+  2  LG+I          20928.755    70  41997.511    42007.501    42345.527
+  3  LG+G4         20497.385    70  41134.770    41144.760    41482.787
+  4  LG+I+G4       20493.159    71  41128.318    41138.604    41481.306
+  5  LG+R2         20554.853    71  41251.705    41261.991    41604.694
+  6  LG+R3         20502.028    73  41150.056    41160.948    41512.988
+  7  LG+R4         20487.959    75  41125.917    41137.433    41498.793
+  8  LG+R5         20487.572    77  41129.144    41141.302    41511.963
+ 14  LG+I+R2       20526.079    72  41196.158    41206.744    41554.118
+ 15  LG+I+R3       20490.949    74  41129.897    41141.098    41497.801
+ 16  LG+I+R4       20486.265    76  41124.531    41136.365    41502.377
+ 25  LG+F+G4       20472.523    89  41123.045    41139.459    41565.524
+ 26  LG+F+I+G4     20468.397    90  41116.795    41133.595    41564.245
+ 47  WAG+G4        20573.679    70  41287.358    41297.348    41635.375
+ 48  WAG+I+G4      20566.334    71  41274.668    41284.953    41627.656
+ 69  WAG+F+G4      20567.360    89  41312.720    41329.134    41755.199
+ 70  WAG+F+I+G4    20560.878    90  41301.756    41318.556    41749.206
+ 91  JTT+G4        20524.285    70  41188.570    41198.560    41536.587
+ 92  JTT+I+G4      20518.244    71  41178.487    41188.773    41531.476
+113  JTT+F+G4      20529.701    89  41237.403    41253.817    41679.881
+114  JTT+F+I+G4    20524.268    90  41228.536    41245.336    41675.986
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+135  Q.pfam+G4     20496.995    70  41133.989    41143.979    41482.006
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+136  Q.pfam+I+G4   20493.325    71  41128.649    41138.935    41481.638
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+157  Q.pfam+F+G4   20493.021    89  41164.043    41180.457    41606.521
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+158  Q.pfam+F+I+G4 20489.787    90  41159.573    41176.373    41607.023
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+179  Q.bird+G4     20767.667    70  41675.335    41685.325    42023.352
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+180  Q.bird+I+G4   20761.824    71  41665.648    41675.934    42018.637
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+201  Q.bird+F+G4   20830.373    89  41838.747    41855.161    42281.225
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+202  Q.bird+F+I+G4 20825.448    90  41830.896    41847.696    42278.346
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+223  Q.mammal+G4   20670.558    70  41481.117    41491.107    41829.133
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+224  Q.mammal+I+G4 20664.817    71  41471.635    41481.921    41824.623
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+245  Q.mammal+F+G4 20728.201    89  41634.402    41650.816    42076.881
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+246  Q.mammal+F+I+G4 20723.768    90  41627.536    41644.336    42074.986
+267  Q.insect+G4   20542.168    70  41224.335    41234.325    41572.352
+268  Q.insect+I+G4 20537.885    71  41217.769    41228.055    41570.758
+289  Q.insect+F+G4 20517.630    89  41213.261    41229.675    41655.739
+290  Q.insect+F+I+G4 20513.152    90  41206.304    41223.104    41653.754
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+311  Q.plant+G4    20492.735    70  41125.469    41135.459    41473.486
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+312  Q.plant+I+G4  20488.143    71  41118.286    41128.572    41471.275
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+333  Q.plant+F+G4  20498.791    89  41175.582    41191.996    41618.060
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+334  Q.plant+F+I+G4 20494.154    90  41168.307    41185.107    41615.757
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+355  Q.yeast+G4    20582.783    70  41305.566    41315.556    41653.583
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+356  Q.yeast+I+G4  20578.902    71  41299.804    41310.090    41652.793
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+377  Q.yeast+F+G4  20506.123    89  41190.246    41206.660    41632.724
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+378  Q.yeast+F+I+G4 20502.081    90  41184.163    41200.963    41631.613
+399  JTTDCMut+G4   20519.187    70  41178.373    41188.363    41526.390
+400  JTTDCMut+I+G4 20513.117    71  41168.234    41178.519    41521.222
+421  JTTDCMut+F+G4 20522.548    89  41223.095    41239.509    41665.574
+422  JTTDCMut+F+I+G4 20517.123    90  41214.246    41231.046    41661.696
+443  DCMut+G4      20695.997    70  41531.993    41541.983    41880.010
+444  DCMut+I+G4    20686.887    71  41515.774    41526.060    41868.763
+465  DCMut+F+G4    20668.246    89  41514.492    41530.906    41956.970
+466  DCMut+F+I+G4  20660.605    90  41501.209    41518.009    41948.660
+487  VT+G4         20639.283    70  41418.566    41428.556    41766.582
+488  VT+I+G4       20633.854    71  41409.708    41419.994    41762.697
+509  VT+F+G4       20639.723    89  41457.447    41473.861    41899.925
+510  VT+F+I+G4     20634.672    90  41449.343    41466.143    41896.793
+531  PMB+G4        20836.345    70  41812.691    41822.681    42160.708
+532  PMB+I+G4      20831.935    71  41805.871    41816.157    42158.859
+553  PMB+F+G4      20837.525    89  41853.050    41869.463    42295.528
+554  PMB+F+I+G4    20832.901    90  41845.801    41862.601    42293.252
+575  Blosum62+G4   20831.792    70  41803.584    41813.574    42151.601
+576  Blosum62+I+G4 20827.049    71  41796.099    41806.384    42149.087
+597  Blosum62+F+G4 20827.642    89  41833.284    41849.698    42275.762
+598  Blosum62+F+I+G4 20822.480    90  41824.961    41841.761    42272.411
+619  Dayhoff+G4    20694.597    70  41529.195    41539.185    41877.212
+620  Dayhoff+I+G4  20685.483    71  41512.967    41523.253    41865.955
+641  Dayhoff+F+G4  20666.950    89  41511.899    41528.313    41954.378
+642  Dayhoff+F+I+G4 20659.307    90  41498.614    41515.414    41946.064
+663  mtREV+G4      21662.030    70  43464.059    43474.049    43812.076
+664  mtREV+I+G4    21658.345    71  43458.690    43468.976    43811.679
+685  mtREV+F+G4    20804.288    89  41786.576    41802.989    42229.054
+686  mtREV+F+I+G4  20799.172    90  41778.344    41795.144    42225.794
+707  mtART+G4      21943.420    70  44026.841    44036.831    44374.858
+708  mtART+I+G4    21941.489    71  44024.977    44035.263    44377.966
+729  mtART+F+G4    21090.665    89  42359.330    42375.744    42801.809
+730  mtART+F+I+G4  21086.873    90  42353.747    42370.547    42801.197
+751  mtZOA+G4      21373.339    70  42886.677    42896.667    43234.694
+752  mtZOA+I+G4    21371.508    71  42885.016    42895.301    43238.004
+773  mtZOA+F+G4    20787.845    89  41753.689    41770.103    42196.168
+774  mtZOA+F+I+G4  20784.243    90  41748.485    41765.285    42195.936
+795  mtMet+G4      21641.729    70  43423.458    43433.448    43771.475
+796  mtMet+I+G4    21640.377    71  43422.754    43433.040    43775.743
+817  mtMet+F+G4    20762.360    89  41702.721    41719.135    42145.199
+818  mtMet+F+I+G4  20759.012    90  41698.023    41714.823    42145.473
+839  mtVer+G4      21773.735    70  43687.469    43697.459    44035.486
+840  mtVer+I+G4    21773.157    71  43688.314    43698.600    44041.303
+861  mtVer+F+G4    20961.130    89  42100.260    42116.674    42542.739
+862  mtVer+F+I+G4  20957.812    90  42095.625    42112.425    42543.075
+883  mtInv+G4      21796.669    70  43733.337    43743.327    44081.354
+884  mtInv+I+G4    21794.768    71  43731.536    43741.821    44084.524
+905  mtInv+F+G4    20684.733    89  41547.466    41563.880    41989.945
+906  mtInv+F+I+G4  20680.887    90  41541.774    41558.574    41989.224
+927  mtMAM+G4      22088.034    70  44316.069    44326.059    44664.086
+928  mtMAM+I+G4    22086.533    71  44315.066    44325.352    44668.054
+949  mtMAM+F+G4    21176.404    89  42530.807    42547.221    42973.286
+950  mtMAM+F+I+G4  21171.669    90  42523.339    42540.139    42970.789
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+971  FLAVI+G4      21263.139    70  42666.278    42676.268    43014.295
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+972  FLAVI+I+G4    21258.237    71  42658.474    42668.759    43011.462
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+993  FLAVI+F+G4    21189.572    89  42557.144    42573.558    42999.622
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+994  FLAVI+F+I+G4  21183.741    90  42547.482    42564.282    42994.932
+1015  HIVb+G4       21022.925    70  42185.851    42195.841    42533.867
+1016  HIVb+I+G4     21015.129    71  42172.258    42182.544    42525.247
+1037  HIVb+F+G4     20902.913    89  41983.827    42000.241    42426.305
+1038  HIVb+F+I+G4   20895.978    90  41971.956    41988.756    42419.406
+1059  HIVw+G4       21814.856    70  43769.712    43779.702    44117.729
+1060  HIVw+I+G4     21800.417    71  43742.833    43753.119    44095.822
+1081  HIVw+F+G4     21465.449    89  43108.899    43125.313    43551.377
+1082  HIVw+F+I+G4   21451.774    90  43083.548    43100.348    43530.998
+1103  FLU+G4        20989.204    70  42118.407    42128.397    42466.424
+1104  FLU+I+G4      20982.314    71  42106.629    42116.915    42459.617
+1125  FLU+F+G4      20859.601    89  41897.201    41913.615    42339.680
+1126  FLU+F+I+G4    20852.952    90  41885.904    41902.704    42333.354
+1147  rtREV+G4      20723.574    70  41587.148    41597.138    41935.165
+1148  rtREV+I+G4    20719.449    71  41580.899    41591.185    41933.887
+1169  rtREV+F+G4    20596.101    89  41370.202    41386.615    41812.680
+1170  rtREV+F+I+G4  20592.114    90  41364.228    41381.028    41811.679
+1191  cpREV+G4      20696.611    70  41533.223    41543.213    41881.239
+1192  cpREV+I+G4    20690.311    71  41522.622    41532.908    41875.610
+1213  cpREV+F+G4    20667.522    89  41513.045    41529.459    41955.523
+1214  cpREV+F+I+G4  20659.867    90  41499.735    41516.535    41947.185
+Akaike Information Criterion:           LG+F+I+G4
+Corrected Akaike Information Criterion: Q.plant+I+G4
+Bayesian Information Criterion:         Q.plant+I+G4
+Best-fit model: Q.plant+I+G4 chosen according to BIC
+
+All model information printed to /home/bio312-user/lab05-s3-echen/HADHA/HADHA.homologsf.al.fas.model.gz
+CPU time for ModelFinder: 245.803 seconds (0h:4m:5s)
+Wall-clock time for ModelFinder: 126.598 seconds (0h:2m:6s)
+Generating 1000 samples for ultrafast bootstrap (seed: 596798)...
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+
+NOTE: 23 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 1.369 / Estimate: 0.000, 0.921 / LogL: -20492.743
+Init pinv, alpha: 0.035, 1.369 / Estimate: 0.040, 1.093 / LogL: -20488.397
+Init pinv, alpha: 0.069, 1.369 / Estimate: 0.055, 1.161 / LogL: -20488.250
+Init pinv, alpha: 0.104, 1.369 / Estimate: 0.057, 1.166 / LogL: -20488.273
+Init pinv, alpha: 0.139, 1.369 / Estimate: 0.057, 1.165 / LogL: -20488.259
+Init pinv, alpha: 0.174, 1.369 / Estimate: 0.056, 1.161 / LogL: -20488.223
+Init pinv, alpha: 0.208, 1.369 / Estimate: 0.056, 1.163 / LogL: -20488.235
+Init pinv, alpha: 0.243, 1.369 / Estimate: 0.057, 1.165 / LogL: -20488.247
+Init pinv, alpha: 0.278, 1.369 / Estimate: 0.057, 1.166 / LogL: -20488.255
+Init pinv, alpha: 0.312, 1.369 / Estimate: 0.057, 1.167 / LogL: -20488.266
+Optimal pinv,alpha: 0.056, 1.161 / LogL: -20488.223
+
+Parameters optimization took 16.437 sec
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.0977123 secs using 197.4% CPU
+Computing ML distances took 0.098373 sec (of wall-clock time) 0.193105 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.000105097 secs using 98% CPU
+Computing RapidNJ tree took 0.000818 sec (of wall-clock time) 0.000502 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -20539.437
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 1.275 second
+Computing log-likelihood of 98 initial trees ... 6.152 seconds
+Current best score: -20488.223
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -20482.189
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -20473.651
+Iteration 10 / LogL: -20483.918 / Time: 0h:2m:41s
+Iteration 20 / LogL: -20483.996 / Time: 0h:2m:53s
+Finish initializing candidate tree set (7)
+Current best tree score: -20473.651 / CPU time: 29.969
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -20487.642 / Time: 0h:3m:4s (0h:2m:26s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 32: -20470.951
+Iteration 40 / LogL: -20486.782 / Time: 0h:3m:15s (0h:2m:42s left)
+Iteration 50 / LogL: -20520.445 / Time: 0h:3m:26s (0h:2m:14s left)
+Log-likelihood cutoff on original alignment: -20516.402
+Iteration 60 / LogL: -20474.144 / Time: 0h:3m:38s (0h:1m:52s left)
+Iteration 70 / LogL: -20477.572 / Time: 0h:3m:49s (0h:1m:32s left)
+Iteration 80 / LogL: -20477.654 / Time: 0h:4m:1s (0h:1m:15s left)
+Iteration 90 / LogL: -20478.306 / Time: 0h:4m:12s (0h:0m:59s left)
+Iteration 100 / LogL: -20472.093 / Time: 0h:4m:23s (0h:0m:44s left)
+Log-likelihood cutoff on original alignment: -20513.349
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.998
+Iteration 110 / LogL: -20500.326 / Time: 0h:4m:34s (0h:2m:2s left)
+Iteration 120 / LogL: -20472.966 / Time: 0h:4m:45s (0h:1m:47s left)
+Iteration 130 / LogL: -20477.000 / Time: 0h:4m:57s (0h:1m:32s left)
+TREE SEARCH COMPLETED AFTER 133 ITERATIONS / Time: 0h:5m:1s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -20470.951
+2. Current log-likelihood: -20470.940
+Optimal log-likelihood: -20470.930
+Proportion of invariable sites: 0.049
+Gamma shape alpha: 1.149
+Parameters optimization took 2 rounds (0.376 sec)
+BEST SCORE FOUND : -20470.930
+Creating bootstrap support values...
+Split supports printed to NEXUS file /home/bio312-user/lab05-s3-echen/HADHA/HADHA.homologsf.al.fas.splits.nex
+Total tree length: 11.999
+
+Total number of iterations: 133
+CPU time used for tree search: 310.644 sec (0h:5m:10s)
+Wall-clock time used for tree search: 157.615 sec (0h:2m:37s)
+Total CPU time used: 590.814 sec (0h:9m:50s)
+Total wall-clock time used: 301.760 sec (0h:5m:1s)
+
+Computing bootstrap consensus tree...
+Reading input file /home/bio312-user/lab05-s3-echen/HADHA/HADHA.homologsf.al.fas.splits.nex...
+36 taxa and 147 splits.
+Consensus tree written to /home/bio312-user/lab05-s3-echen/HADHA/HADHA.homologsf.al.fas.contree
+Reading input trees file /home/bio312-user/lab05-s3-echen/HADHA/HADHA.homologsf.al.fas.contree
+Log-likelihood of consensus tree: -20470.925
+
+Analysis results written to: 
+  IQ-TREE report:                /home/bio312-user/lab05-s3-echen/HADHA/HADHA.homologsf.al.fas.iqtree
+  Maximum-likelihood tree:       /home/bio312-user/lab05-s3-echen/HADHA/HADHA.homologsf.al.fas.treefile
+  Likelihood distances:          /home/bio312-user/lab05-s3-echen/HADHA/HADHA.homologsf.al.fas.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          /home/bio312-user/lab05-s3-echen/HADHA/HADHA.homologsf.al.fas.splits.nex
+  Consensus tree:                /home/bio312-user/lab05-s3-echen/HADHA/HADHA.homologsf.al.fas.contree
+  Screen log file:               /home/bio312-user/lab05-s3-echen/HADHA/HADHA.homologsf.al.fas.log
+
+Date and Time: Thu Sep 26 19:55:07 2024

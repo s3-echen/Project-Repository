@@ -1,0 +1,198 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=36;
+TAXLABELS
+[1] 'G.gallus_EHHADH_peroxisomal_bifunctional_enzyme_isoform_X2'
+[2] 'S.salar_ehhadh_peroxisomal_bifunctional_enzyme'
+[3] 'X.laevis_ehhadh.S_peroxisomal_bifunctional_enzyme'
+[4] 'D.rerio_ehhadh_peroxisomal_bifunctional_enzyme'
+[5] 'G.aculeatus_ehhadh_peroxisomal_bifunctional_enzyme'
+[6] 'F.catus_EHHADH_peroxisomal_bifunctional_enzyme'
+[7] 'E.caballus_EHHADH_peroxisomal_bifunctional_enzyme'
+[8] 'H.sapiens_EHHADH_peroxisomal_bifunctional_enzyme_isoform_1'
+[9] 'C.mydas_EHHADH_peroxisomal_bifunctional_enzyme'
+[10] 'S.townsendi_EHHADH_peroxisomal_bifunctional_enzyme'
+[11] 'D.rerio_hadhaa_hydroxyacylCoA_dehydrogenase_trifunctional_multien'
+[12] 'C.mydas_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial_is'
+[13] 'C.carcharias_LOC121278346_trifunctional_enzyme_subunit_alpha_mito'
+[14] 'X.laevis_hadha.L_trifunctional_enzyme_subunit_alpha_mitochondrial'
+[15] 'X.laevis_hadha.S_hydroxyacylCoA_dehydrogenase_trifunctional_multi'
+[16] 'G.gallus_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial'
+[17] 'G.aculeatus_hadhab_hydroxyacylCoA_dehydrogenase_trifunctional_mul'
+[18] 'E.caballus_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial'
+[19] 'S.townsendi_HADHA_trifunctional_enzyme_subunit_alpha_mitochondria'
+[20] 'F.catus_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial'
+[21] 'H.sapiens_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial_'
+[22] 'S.salar_LOC106611334_trifunctional_enzyme_subunit_alpha_mitochond'
+[23] 'D.rerio_hadhab_hydroxyacylCoA_dehydrogenase_trifunctional_multien'
+[24] 'S.salar_hadhab_hydroxyacylCoA_dehydrogenase_trifunctional_multien'
+[25] 'G.gallus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial'
+[26] 'X.laevis_hadh.L_hydroxyacylCoA_dehydrogenase_L_homeolog'
+[27] 'C.mydas_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial'
+[28] 'H.sapiens_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial_'
+[29] 'E.caballus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial'
+[30] 'F.catus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial'
+[31] 'C.carcharias_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondri'
+[32] 'S.salar_LOC106610339_hydroxyacylcoenzyme_A_dehydrogenase_mitochon'
+[33] 'G.aculeatus_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondria'
+[34] 'S.townsendi_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondria'
+[35] 'D.rerio_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial'
+[36] 'S.salar_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=36 nsplits=147;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 5,
+	100	 2 5,
+	100	 4,
+	100	 2 4 5,
+	100	 11,
+	100	 17,
+	100	 22,
+	100	 24,
+	100	 22 24,
+	96	 17 22 24,
+	100	 23,
+	89	 17 22 23 24,
+	99	 11 17 22 23 24,
+	100	 13,
+	93	 11 13 17 22 23 24,
+	100	 14,
+	100	 15,
+	100	 14 15,
+	60	 11 13 14 15 17 22 23 24,
+	100	 19,
+	20	 11 13 14 15 17 19 22 23 24,
+	100	 12,
+	9	 11 12 13 14 15 17 19 22 23 24,
+	100	 18,
+	100	 21,
+	86	 18 21,
+	100	 20,
+	99	 18 20 21,
+	69	 11 12 13 14 15 17 18 19 20 21 22 23 24,
+	100	 16,
+	100	 11 12 13 14 15 16 17 18 19 20 21 22 23 24,
+	100	 25,
+	100	 34,
+	95	 25 34,
+	100	 27,
+	90	 25 27 34,
+	100	 26,
+	85	 25 26 27 34,
+	100	 28,
+	100	 29,
+	67	 28 29,
+	100	 30,
+	100	 28 29 30,
+	95	 25 26 27 28 29 30 34,
+	100	 31,
+	86	 25 26 27 28 29 30 31 34,
+	100	 35,
+	86	 25 26 27 28 29 30 31 34 35,
+	100	 32,
+	100	 36,
+	100	 32 36,
+	86	 25 26 27 28 29 30 31 32 34 35 36,
+	100	 33,
+	100	 25 26 27 28 29 30 31 32 33 34 35 36,
+	100	 1 2 3 4 5 6 7 8 9 10,
+	97	 1 3 6 7 8 9 10,
+	100	 3,
+	100	 1 6 7 8 9 10,
+	100	 6,
+	100	 8,
+	97	 6 8,
+	100	 7,
+	100	 6 7 8,
+	98	 1 9 10,
+	100	 10,
+	91	 1 9,
+	100	 9,
+	100	 1,
+	26	 12 16,
+	24	 12 16 19,
+	5	 12 14 15 16 19,
+	7	 18 20,
+	22	 12 14 15 16 18 19 20 21,
+	6	 11 12 14 15 16 17 18 19 20 21 22 23 24,
+	54	 11 13 14 15 17 18 20 21 22 23 24,
+	54	 11 13 14 15 17 18 19 20 21 22 23 24,
+	31	 28 30,
+	12	 25 27 28 29 30 34,
+	19	 12 16 18 19 20 21,
+	4	 1 10,
+	16	 11 13 17 18 20 21 22 23 24,
+	14	 32 33 36,
+	14	 32 33 35 36,
+	10	 25 26 27 28 29 30 32 33 34 35 36,
+	5	 9 10,
+	9	 12 19,
+	6	 20 21,
+	4	 31 32 33 35 36,
+	3	 28 29 30 31 32 33 35 36,
+	2	 26 28 29 30 31 32 33 35 36,
+	3	 26 27 28 29 30 31 32 33 35 36,
+	3	 17 23,
+	2	 12 13 14 15 16 18 19 20 21,
+	11	 11 23,
+	4	 12 16 18 20 21,
+	1	 11 12 13 14 15 17 18 20 21 22 23 24,
+	2	 29 30,
+	3	 6 7,
+	8	 26 27,
+	1	 11 12 13 14 15 16 17 19 22 23 24,
+	1	 11 12 13 14 15 16 17 19 20 22 23 24,
+	1	 11 12 13 14 15 16 17 18 19 20 22 23 24,
+	1	 11 13 17 19 22 23 24,
+	1	 25 26 27 28 29 30 31 32 33 35 36,
+	2	 2 3 4 5,
+	1	 2 3 4 5 6 7 8,
+	1	 1 2 3 4 5 6 7 8 9,
+	2	 25 26 27 31 34,
+	1	 1 2 4 5 6 7 8 9 10,
+	1	 11 12 13 14 15 16 17 18 20 21 22 23 24,
+	1	 1 2 3 5 6 7 8 9 10,
+	0	 11 12 13 14 15 16 18 19 20 21 23,
+	0	 11 12 13 14 15 16 17 18 19 20 21 23,
+	1	 12 18 20 21,
+	2	 16 18 20 21,
+	4	 25 27,
+	0	 11 17 18 20 21 22 23 24,
+	0	 27 34,
+	0	 26 27 34,
+	0	 16 19,
+	0	 25 26 27 31 32 33 34 35 36,
+	0	 25 26 27 29 31 32 33 34 35 36,
+	0	 25 26 27 29 30 31 32 33 34 35 36,
+	0	 26 31,
+	0	 28 29 30 31,
+	1	 14 15 19,
+	0	 11 12 13 14 15 16 18 19 20 21,
+	0	 26 31 32 33 35 36,
+	0	 11 12 13 16 17 18 19 20 21 22 23 24,
+	1	 1 6 7 8 9,
+	0	 11 13 14 15 16 17 18 19 20 21 22 23 24,
+	0	 11 12 13 14 15 16 17 18 19 22 23 24,
+	0	 26 27 28 29 30 31 32 33 34 35 36,
+	1	 6 7 8 10,
+	0	 11 17 22 24,
+	1	 11 22 23 24,
+	0	 7 8,
+	0	 25 26 27 30 31 32 33 34 35 36,
+	0	 1 6 7 8,
+	0	 26 34,
+	0	 28 29 30 32 33 35 36,
+	0	 25 26 27,
+	0	 6 7 8 9,
+	0	 1 2 3 4 5 6 7 8 9 10 11 13 17 22 23 24,
+	0	 1 2 3 4 5 6 7 8 9 10 11 17 22 23 24,
+	0	 1 2 3 4 5 6 7 8 9 10 17 22 23 24,
+;
+END; [Splits]
+
