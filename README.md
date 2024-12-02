@@ -1,5 +1,5 @@
 # Project-Repository
-This document contains all the necessary commands needed to replicate the analysis done for the project.  
+This document contains all the necessary commands needed to replicate the analysis done for the project. All code containing gene family HADHA can be replaced with own gene family name.  
 
 # Step 1: Finding Homologs 
 Commands:
