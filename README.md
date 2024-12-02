@@ -46,28 +46,44 @@ Commands:
 
 mkdir ~/lab04-$MYGIT/HADHA        
 cd ~/lab04-$MYGIT/HADHA        
-pwd
+pwd  
+(Create new directory with gene family name, go to that directory, and make sure in that directory)
 
-seqkit grep --pattern-file ~/lab03-$MYGIT/HADHA/HADHA.blastp.detail.filtered.out ~/lab03-$MYGIT/allprotein.fas | seqkit grep -v -p "carpio" > ~/lab04-$MYGIT/HADHA/HADHA.homologs.fas
+seqkit grep --pattern-file ~/lab03-$MYGIT/HADHA/HADHA.blastp.detail.filtered.out ~/lab03-$MYGIT/allprotein.fas | seqkit grep -v -p "carpio" > ~/lab04-$MYGIT/HADHA/HADHA.homologs.fas  
+(Extract sequences in the "allprotein.fas" file that match the ones in the BLAST results file, and remove any sequences that contain "carpio", then save this to a new file)
 
-less HADHA.homologs.fas
+less HADHA.homologs.fas  
+(Use this to look at the newly created file to make sure the sequences were filtered correctly)
 
-muscle -align ~/lab04-$MYGIT/HADHA/HADHA.homologs.fas -output ~/lab04-$MYGIT/HADHA/HADHA.homologs.al.fas
+muscle -align ~/lab04-$MYGIT/HADHA/HADHA.homologs.fas -output ~/lab04-$MYGIT/HADHA/HADHA.homologs.al.fas  
+(Align the sequences using MUSCLE and save the alignment in a new file)
 
-alv -kli  ~/lab04-$MYGIT/HADHA/HADHA.homologs.al.fas | less -RS
+alv -kli  ~/lab04-$MYGIT/HADHA/HADHA.homologs.al.fas | less -RS  
+(View the alignment in a colored format, can see the differences very easily)
 
-alv -kli --majority ~/lab04-$MYGIT/HADHA/HADHA.homologs.al.fas | less -RS
+alv -kli --majority ~/lab04-$MYGIT/HADHA/HADHA.homologs.al.fas | less -RS  
+(View the alignment, having the majority consensus sequence highlighted)
 
-Rscript --vanilla ~/lab04-$MYGIT/plotMSA.R  ~/lab04-$MYGIT/HADHA/HADHA.homologs.al.fas
+Rscript --vanilla ~/lab04-$MYGIT/plotMSA.R  ~/lab04-$MYGIT/HADHA/HADHA.homologs.al.fas  
+(Make a visual plot of the alignment using R script)
 
-alignbuddy -al  ~/lab04-$MYGIT/HADHA/HADHA.homologs.al.fas
+alignbuddy -al  ~/lab04-$MYGIT/HADHA/HADHA.homologs.al.fas  
+(This opens the alignment in the AlignBuddy tool for analysis, such as the wigth(length) of the alignment)
 
-alignbuddy -trm all  ~/lab04-$MYGIT/HADHA/HADHA.homologs.al.fas | alignbuddy -al
+alignbuddy -trm all  ~/lab04-$MYGIT/HADHA/HADHA.homologs.al.fas | alignbuddy -al  
+(Removes any gaps from the alignment, can view the length after this filtering)
 
-alignbuddy -dinv 'ambig' ~/lab04-$MYGIT/HADHA/HADHA.homologs.al.fas | alignbuddy -al
+alignbuddy -dinv 'ambig' ~/lab04-$MYGIT/HADHA/HADHA.homologs.al.fas | alignbuddy -al  
+(This is used to calculate the length of the alignment after removing uncertain or ambiguous regions from the alignment)
 
-t_coffee -other_pg seq_reformat -in ~/lab04-$MYGIT/HADHA/HADHA.homologs.al.fas -output sim
+t_coffee -other_pg seq_reformat -in ~/lab04-$MYGIT/HADHA/HADHA.homologs.al.fas -output sim  
+(Using T-Coffee to calculate the average percent identity of the alignment)
 
 alignbuddy -pi ~/lab04-$MYGIT/HADHA/HADHA.homologs.al.fas | awk ' (NR>2)  { for (i=2;i<=NF  ;i++){ sum+=$i;num++} }
-END{ print(100*sum/num) }'
+END{ print(100*sum/num) }' 
+(Using AlignBuddy to calculate the average percent identity of the alignment)
+
+# Step 3: 
+Commands: 
+
 
