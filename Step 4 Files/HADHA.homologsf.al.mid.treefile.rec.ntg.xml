@@ -1,0 +1,1505 @@
+<recPhylo>
+  <spTree>
+    <phylogeny>
+      <clade>
+        <name>Gnathostomata</name>
+        <clade>
+          <name>Euteleostomi</name>
+          <clade>
+            <name>Tetrapoda</name>
+            <clade>
+              <name>Amniota</name>
+              <clade>
+                <name>Boreoeutheria</name>
+                <clade>
+                  <name>Laurasiatheria</name>
+                  <clade>
+                    <name>E.caballus</name>
+                  </clade>
+                  <clade>
+                    <name>F.catus</name>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>H.sapiens</name>
+                </clade>
+              </clade>
+              <clade>
+                <name>Sauria</name>
+                <clade>
+                  <name>Archelosauria</name>
+                  <clade>
+                    <name>G.gallus</name>
+                  </clade>
+                  <clade>
+                    <name>C.mydas</name>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>S.townsendi</name>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <name>X.laevis</name>
+            </clade>
+          </clade>
+          <clade>
+            <name>Clupeocephala</name>
+            <clade>
+              <name>Euteleosteomorpha</name>
+              <clade>
+                <name>G.aculeatus</name>
+              </clade>
+              <clade>
+                <name>S.salar</name>
+              </clade>
+            </clade>
+            <clade>
+              <name>D.rerio</name>
+            </clade>
+          </clade>
+        </clade>
+        <clade>
+          <name>C.carcharias</name>
+        </clade>
+      </clade>
+    </phylogeny>
+  </spTree>
+  <recGeneTree>
+    <phylogeny rooted="true">
+      <clade>
+        <name>n113</name>
+        <confidence>1.0</confidence>
+        <branch_length>1.0</branch_length>
+        <eventsRec>
+          <duplication speciesLocation="Gnathostomata"></duplication>
+        </eventsRec>
+        <clade>
+          <name>n65</name>
+          <confidence>1.0</confidence>
+          <branch_length>1.63021704915</branch_length>
+          <eventsRec>
+            <duplication speciesLocation="Gnathostomata"></duplication>
+          </eventsRec>
+          <clade>
+            <name>n63</name>
+            <confidence>1.0</confidence>
+            <branch_length>0.196384102</branch_length>
+            <eventsRec>
+              <duplication speciesLocation="Gnathostomata"></duplication>
+            </eventsRec>
+            <clade>
+              <name>n59</name>
+              <confidence>1.0</confidence>
+              <branch_length>0.1076876531</branch_length>
+              <eventsRec>
+                <duplication speciesLocation="Gnathostomata"></duplication>
+              </eventsRec>
+              <clade>
+                <name>n57</name>
+                <confidence>1.0</confidence>
+                <branch_length>0.1102158561</branch_length>
+                <eventsRec>
+                  <speciation speciesLocation="Gnathostomata"></speciation>
+                </eventsRec>
+                <clade>
+                  <name>r91</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>1.0</branch_length>
+                  <eventsRec>
+                    <speciation speciesLocation="Euteleostomi"></speciation>
+                  </eventsRec>
+                  <clade>
+                    <name>n55</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>0.0501826742</branch_length>
+                    <eventsRec>
+                      <duplication speciesLocation="Tetrapoda"></duplication>
+                    </eventsRec>
+                    <clade>
+                      <name>n49</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>0.0543271818</branch_length>
+                      <eventsRec>
+                        <speciation speciesLocation="Tetrapoda"></speciation>
+                      </eventsRec>
+                      <clade>
+                        <name>r79</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>1.0</branch_length>
+                        <eventsRec>
+                          <speciation speciesLocation="Amniota"></speciation>
+                        </eventsRec>
+                        <clade>
+                          <name>n47</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>0.0486290497</branch_length>
+                          <eventsRec>
+                            <duplication speciesLocation="Sauria"></duplication>
+                          </eventsRec>
+                          <clade>
+                            <name>n45</name>
+                            <confidence>1.0</confidence>
+                            <branch_length>0.0412023111</branch_length>
+                            <eventsRec>
+                              <speciation speciesLocation="Sauria"></speciation>
+                            </eventsRec>
+                            <clade>
+                              <name>S.townsendi_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondria</name>
+                              <confidence>1.0</confidence>
+                              <branch_length>0.1300962602</branch_length>
+                              <eventsRec>
+                                <leaf speciesLocation="S.townsendi" geneName="S.townsendi_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondria"></leaf>
+                              </eventsRec>
+                            </clade>
+                            <clade>
+                              <name>r73</name>
+                              <confidence>1.0</confidence>
+                              <branch_length>1.0</branch_length>
+                              <eventsRec>
+                                <speciation speciesLocation="Archelosauria"></speciation>
+                              </eventsRec>
+                              <clade>
+                                <name>G.gallus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial</name>
+                                <confidence>1.0</confidence>
+                                <branch_length>0.2566511529</branch_length>
+                                <eventsRec>
+                                  <leaf speciesLocation="G.gallus" geneName="G.gallus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial"></leaf>
+                                </eventsRec>
+                              </clade>
+                              <clade>
+                                <name>C.mydas*LOST</name>
+                                <confidence>1.0</confidence>
+                                <branch_length>1.0</branch_length>
+                                <eventsRec>
+                                  <loss speciesLocation="C.mydas"></loss>
+                                </eventsRec>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>r77</name>
+                            <confidence>1.0</confidence>
+                            <branch_length>1.0</branch_length>
+                            <eventsRec>
+                              <speciation speciesLocation="Sauria"></speciation>
+                            </eventsRec>
+                            <clade>
+                              <name>r75</name>
+                              <confidence>1.0</confidence>
+                              <branch_length>1.0</branch_length>
+                              <eventsRec>
+                                <speciation speciesLocation="Archelosauria"></speciation>
+                              </eventsRec>
+                              <clade>
+                                <name>C.mydas_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial</name>
+                                <confidence>1.0</confidence>
+                                <branch_length>0.080391688</branch_length>
+                                <eventsRec>
+                                  <leaf speciesLocation="C.mydas" geneName="C.mydas_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial"></leaf>
+                                </eventsRec>
+                              </clade>
+                              <clade>
+                                <name>G.gallus*LOST</name>
+                                <confidence>1.0</confidence>
+                                <branch_length>1.0</branch_length>
+                                <eventsRec>
+                                  <loss speciesLocation="G.gallus"></loss>
+                                </eventsRec>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>S.townsendi*LOST</name>
+                              <confidence>1.0</confidence>
+                              <branch_length>1.0</branch_length>
+                              <eventsRec>
+                                <loss speciesLocation="S.townsendi"></loss>
+                              </eventsRec>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Boreoeutheria*LOST</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>1.0</branch_length>
+                          <eventsRec>
+                            <loss speciesLocation="Boreoeutheria"></loss>
+                          </eventsRec>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>X.laevis_hadh.L_hydroxyacylCoA_dehydrogenase_L_homeolog</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>0.0957547465</branch_length>
+                        <eventsRec>
+                          <leaf speciesLocation="X.laevis" geneName="X.laevis_hadh.L_hydroxyacylCoA_dehydrogenase_L_homeolog"></leaf>
+                        </eventsRec>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>r89</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>1.0</branch_length>
+                      <eventsRec>
+                        <speciation speciesLocation="Tetrapoda"></speciation>
+                      </eventsRec>
+                      <clade>
+                        <name>r87</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>1.0</branch_length>
+                        <eventsRec>
+                          <speciation speciesLocation="Amniota"></speciation>
+                        </eventsRec>
+                        <clade>
+                          <name>n54</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>0.1378782161</branch_length>
+                          <eventsRec>
+                            <duplication speciesLocation="Boreoeutheria"></duplication>
+                          </eventsRec>
+                          <clade>
+                            <name>n52</name>
+                            <confidence>1.0</confidence>
+                            <branch_length>0.0176601293</branch_length>
+                            <eventsRec>
+                              <speciation speciesLocation="Boreoeutheria"></speciation>
+                            </eventsRec>
+                            <clade>
+                              <name>r81</name>
+                              <confidence>1.0</confidence>
+                              <branch_length>1.0</branch_length>
+                              <eventsRec>
+                                <speciation speciesLocation="Laurasiatheria"></speciation>
+                              </eventsRec>
+                              <clade>
+                                <name>E.caballus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial</name>
+                                <confidence>1.0</confidence>
+                                <branch_length>0.0633787635</branch_length>
+                                <eventsRec>
+                                  <leaf speciesLocation="E.caballus" geneName="E.caballus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial"></leaf>
+                                </eventsRec>
+                              </clade>
+                              <clade>
+                                <name>F.catus*LOST</name>
+                                <confidence>1.0</confidence>
+                                <branch_length>1.0</branch_length>
+                                <eventsRec>
+                                  <loss speciesLocation="F.catus"></loss>
+                                </eventsRec>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>H.sapiens_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial_</name>
+                              <confidence>1.0</confidence>
+                              <branch_length>0.0438804939</branch_length>
+                              <eventsRec>
+                                <leaf speciesLocation="H.sapiens" geneName="H.sapiens_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial_"></leaf>
+                              </eventsRec>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>r85</name>
+                            <confidence>1.0</confidence>
+                            <branch_length>1.0</branch_length>
+                            <eventsRec>
+                              <speciation speciesLocation="Boreoeutheria"></speciation>
+                            </eventsRec>
+                            <clade>
+                              <name>r83</name>
+                              <confidence>1.0</confidence>
+                              <branch_length>1.0</branch_length>
+                              <eventsRec>
+                                <speciation speciesLocation="Laurasiatheria"></speciation>
+                              </eventsRec>
+                              <clade>
+                                <name>F.catus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial</name>
+                                <confidence>1.0</confidence>
+                                <branch_length>0.0360249366</branch_length>
+                                <eventsRec>
+                                  <leaf speciesLocation="F.catus" geneName="F.catus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial"></leaf>
+                                </eventsRec>
+                              </clade>
+                              <clade>
+                                <name>E.caballus*LOST</name>
+                                <confidence>1.0</confidence>
+                                <branch_length>1.0</branch_length>
+                                <eventsRec>
+                                  <loss speciesLocation="E.caballus"></loss>
+                                </eventsRec>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>H.sapiens*LOST</name>
+                              <confidence>1.0</confidence>
+                              <branch_length>1.0</branch_length>
+                              <eventsRec>
+                                <loss speciesLocation="H.sapiens"></loss>
+                              </eventsRec>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Sauria*LOST</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>1.0</branch_length>
+                          <eventsRec>
+                            <loss speciesLocation="Sauria"></loss>
+                          </eventsRec>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>X.laevis*LOST</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>1.0</branch_length>
+                        <eventsRec>
+                          <loss speciesLocation="X.laevis"></loss>
+                        </eventsRec>
+                      </clade>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>Clupeocephala*LOST</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>1.0</branch_length>
+                    <eventsRec>
+                      <loss speciesLocation="Clupeocephala"></loss>
+                    </eventsRec>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>C.carcharias_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondri</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>0.2004825488</branch_length>
+                  <eventsRec>
+                    <leaf speciesLocation="C.carcharias" geneName="C.carcharias_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondri"></leaf>
+                  </eventsRec>
+                </clade>
+              </clade>
+              <clade>
+                <name>r97</name>
+                <confidence>1.0</confidence>
+                <branch_length>1.0</branch_length>
+                <eventsRec>
+                  <speciation speciesLocation="Gnathostomata"></speciation>
+                </eventsRec>
+                <clade>
+                  <name>r95</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>1.0</branch_length>
+                  <eventsRec>
+                    <speciation speciesLocation="Euteleostomi"></speciation>
+                  </eventsRec>
+                  <clade>
+                    <name>r93</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>1.0</branch_length>
+                    <eventsRec>
+                      <speciation speciesLocation="Clupeocephala"></speciation>
+                    </eventsRec>
+                    <clade>
+                      <name>D.rerio_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>0.1045852394</branch_length>
+                      <eventsRec>
+                        <leaf speciesLocation="D.rerio" geneName="D.rerio_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial"></leaf>
+                      </eventsRec>
+                    </clade>
+                    <clade>
+                      <name>Euteleosteomorpha*LOST</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>1.0</branch_length>
+                      <eventsRec>
+                        <loss speciesLocation="Euteleosteomorpha"></loss>
+                      </eventsRec>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>Tetrapoda*LOST</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>1.0</branch_length>
+                    <eventsRec>
+                      <loss speciesLocation="Tetrapoda"></loss>
+                    </eventsRec>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>C.carcharias*LOST</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>1.0</branch_length>
+                  <eventsRec>
+                    <loss speciesLocation="C.carcharias"></loss>
+                  </eventsRec>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <name>r105</name>
+              <confidence>1.0</confidence>
+              <branch_length>1.0</branch_length>
+              <eventsRec>
+                <speciation speciesLocation="Gnathostomata"></speciation>
+              </eventsRec>
+              <clade>
+                <name>r103</name>
+                <confidence>1.0</confidence>
+                <branch_length>1.0</branch_length>
+                <eventsRec>
+                  <speciation speciesLocation="Euteleostomi"></speciation>
+                </eventsRec>
+                <clade>
+                  <name>r101</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>1.0</branch_length>
+                  <eventsRec>
+                    <speciation speciesLocation="Clupeocephala"></speciation>
+                  </eventsRec>
+                  <clade>
+                    <name>r99</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>1.0</branch_length>
+                    <eventsRec>
+                      <speciation speciesLocation="Euteleosteomorpha"></speciation>
+                    </eventsRec>
+                    <clade>
+                      <name>n62</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>0.1189248141</branch_length>
+                      <eventsRec>
+                        <duplication speciesLocation="S.salar"></duplication>
+                      </eventsRec>
+                      <clade>
+                        <name>S.salar_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>0.0075224794</branch_length>
+                        <eventsRec>
+                          <leaf speciesLocation="S.salar" geneName="S.salar_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial"></leaf>
+                        </eventsRec>
+                      </clade>
+                      <clade>
+                        <name>S.salar_LOC106610339_hydroxyacylcoenzyme_A_dehydrogenase_mitochon</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>2.993e-06</branch_length>
+                        <eventsRec>
+                          <leaf speciesLocation="S.salar" geneName="S.salar_LOC106610339_hydroxyacylcoenzyme_A_dehydrogenase_mitochon"></leaf>
+                        </eventsRec>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>G.aculeatus*LOST</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>1.0</branch_length>
+                      <eventsRec>
+                        <loss speciesLocation="G.aculeatus"></loss>
+                      </eventsRec>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>D.rerio*LOST</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>1.0</branch_length>
+                    <eventsRec>
+                      <loss speciesLocation="D.rerio"></loss>
+                    </eventsRec>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>Tetrapoda*LOST</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>1.0</branch_length>
+                  <eventsRec>
+                    <loss speciesLocation="Tetrapoda"></loss>
+                  </eventsRec>
+                </clade>
+              </clade>
+              <clade>
+                <name>C.carcharias*LOST</name>
+                <confidence>1.0</confidence>
+                <branch_length>1.0</branch_length>
+                <eventsRec>
+                  <loss speciesLocation="C.carcharias"></loss>
+                </eventsRec>
+              </clade>
+            </clade>
+          </clade>
+          <clade>
+            <name>r113</name>
+            <confidence>1.0</confidence>
+            <branch_length>1.0</branch_length>
+            <eventsRec>
+              <speciation speciesLocation="Gnathostomata"></speciation>
+            </eventsRec>
+            <clade>
+              <name>r111</name>
+              <confidence>1.0</confidence>
+              <branch_length>1.0</branch_length>
+              <eventsRec>
+                <speciation speciesLocation="Euteleostomi"></speciation>
+              </eventsRec>
+              <clade>
+                <name>r109</name>
+                <confidence>1.0</confidence>
+                <branch_length>1.0</branch_length>
+                <eventsRec>
+                  <speciation speciesLocation="Clupeocephala"></speciation>
+                </eventsRec>
+                <clade>
+                  <name>r107</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>1.0</branch_length>
+                  <eventsRec>
+                    <speciation speciesLocation="Euteleosteomorpha"></speciation>
+                  </eventsRec>
+                  <clade>
+                    <name>G.aculeatus_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondria</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>0.0889712068</branch_length>
+                    <eventsRec>
+                      <leaf speciesLocation="G.aculeatus" geneName="G.aculeatus_hadh_hydroxyacylcoenzyme_A_dehydrogenase_mitochondria"></leaf>
+                    </eventsRec>
+                  </clade>
+                  <clade>
+                    <name>S.salar*LOST</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>1.0</branch_length>
+                    <eventsRec>
+                      <loss speciesLocation="S.salar"></loss>
+                    </eventsRec>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>D.rerio*LOST</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>1.0</branch_length>
+                  <eventsRec>
+                    <loss speciesLocation="D.rerio"></loss>
+                  </eventsRec>
+                </clade>
+              </clade>
+              <clade>
+                <name>Tetrapoda*LOST</name>
+                <confidence>1.0</confidence>
+                <branch_length>1.0</branch_length>
+                <eventsRec>
+                  <loss speciesLocation="Tetrapoda"></loss>
+                </eventsRec>
+              </clade>
+            </clade>
+            <clade>
+              <name>C.carcharias*LOST</name>
+              <confidence>1.0</confidence>
+              <branch_length>1.0</branch_length>
+              <eventsRec>
+                <loss speciesLocation="C.carcharias"></loss>
+              </eventsRec>
+            </clade>
+          </clade>
+        </clade>
+        <clade>
+          <name>n112</name>
+          <confidence>1.0</confidence>
+          <branch_length>0.03339761085</branch_length>
+          <eventsRec>
+            <duplication speciesLocation="Gnathostomata"></duplication>
+          </eventsRec>
+          <clade>
+            <name>r121</name>
+            <confidence>1.0</confidence>
+            <branch_length>1.0</branch_length>
+            <eventsRec>
+              <speciation speciesLocation="Gnathostomata"></speciation>
+            </eventsRec>
+            <clade>
+              <name>n84</name>
+              <confidence>1.0</confidence>
+              <branch_length>1.636446053</branch_length>
+              <eventsRec>
+                <speciation speciesLocation="Euteleostomi"></speciation>
+              </eventsRec>
+              <clade>
+                <name>n78</name>
+                <confidence>1.0</confidence>
+                <branch_length>0.1388083595</branch_length>
+                <eventsRec>
+                  <speciation speciesLocation="Tetrapoda"></speciation>
+                </eventsRec>
+                <clade>
+                  <name>n76</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>0.1873321034</branch_length>
+                  <eventsRec>
+                    <speciation speciesLocation="Amniota"></speciation>
+                  </eventsRec>
+                  <clade>
+                    <name>n70</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>0.0931743785</branch_length>
+                    <eventsRec>
+                      <speciation speciesLocation="Sauria"></speciation>
+                    </eventsRec>
+                    <clade>
+                      <name>n68</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>0.0546468481</branch_length>
+                      <eventsRec>
+                        <speciation speciesLocation="Archelosauria"></speciation>
+                      </eventsRec>
+                      <clade>
+                        <name>C.mydas_EHHADH_peroxisomal_bifunctional_enzyme</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>0.1668491492</branch_length>
+                        <eventsRec>
+                          <leaf speciesLocation="C.mydas" geneName="C.mydas_EHHADH_peroxisomal_bifunctional_enzyme"></leaf>
+                        </eventsRec>
+                      </clade>
+                      <clade>
+                        <name>G.gallus_EHHADH_peroxisomal_bifunctional_enzyme_isoform_X2</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>0.3006915033</branch_length>
+                        <eventsRec>
+                          <leaf speciesLocation="G.gallus" geneName="G.gallus_EHHADH_peroxisomal_bifunctional_enzyme_isoform_X2"></leaf>
+                        </eventsRec>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>S.townsendi_EHHADH_peroxisomal_bifunctional_enzyme</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>0.2962076135</branch_length>
+                      <eventsRec>
+                        <leaf speciesLocation="S.townsendi" geneName="S.townsendi_EHHADH_peroxisomal_bifunctional_enzyme"></leaf>
+                      </eventsRec>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>n75</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>0.3777102413</branch_length>
+                    <eventsRec>
+                      <duplication speciesLocation="Boreoeutheria"></duplication>
+                    </eventsRec>
+                    <clade>
+                      <name>n73</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>0.0213393774</branch_length>
+                      <eventsRec>
+                        <speciation speciesLocation="Boreoeutheria"></speciation>
+                      </eventsRec>
+                      <clade>
+                        <name>H.sapiens_EHHADH_peroxisomal_bifunctional_enzyme_isoform_1</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>0.0663138223</branch_length>
+                        <eventsRec>
+                          <leaf speciesLocation="H.sapiens" geneName="H.sapiens_EHHADH_peroxisomal_bifunctional_enzyme_isoform_1"></leaf>
+                        </eventsRec>
+                      </clade>
+                      <clade>
+                        <name>r115</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>1.0</branch_length>
+                        <eventsRec>
+                          <speciation speciesLocation="Laurasiatheria"></speciation>
+                        </eventsRec>
+                        <clade>
+                          <name>F.catus_EHHADH_peroxisomal_bifunctional_enzyme</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>0.1004632846</branch_length>
+                          <eventsRec>
+                            <leaf speciesLocation="F.catus" geneName="F.catus_EHHADH_peroxisomal_bifunctional_enzyme"></leaf>
+                          </eventsRec>
+                        </clade>
+                        <clade>
+                          <name>E.caballus*LOST</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>1.0</branch_length>
+                          <eventsRec>
+                            <loss speciesLocation="E.caballus"></loss>
+                          </eventsRec>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>r119</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>1.0</branch_length>
+                      <eventsRec>
+                        <speciation speciesLocation="Boreoeutheria"></speciation>
+                      </eventsRec>
+                      <clade>
+                        <name>r117</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>1.0</branch_length>
+                        <eventsRec>
+                          <speciation speciesLocation="Laurasiatheria"></speciation>
+                        </eventsRec>
+                        <clade>
+                          <name>E.caballus_EHHADH_peroxisomal_bifunctional_enzyme</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>0.0821621663</branch_length>
+                          <eventsRec>
+                            <leaf speciesLocation="E.caballus" geneName="E.caballus_EHHADH_peroxisomal_bifunctional_enzyme"></leaf>
+                          </eventsRec>
+                        </clade>
+                        <clade>
+                          <name>F.catus*LOST</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>1.0</branch_length>
+                          <eventsRec>
+                            <loss speciesLocation="F.catus"></loss>
+                          </eventsRec>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>H.sapiens*LOST</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>1.0</branch_length>
+                        <eventsRec>
+                          <loss speciesLocation="H.sapiens"></loss>
+                        </eventsRec>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>X.laevis_ehhadh.S_peroxisomal_bifunctional_enzyme</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>0.4419228856</branch_length>
+                  <eventsRec>
+                    <leaf speciesLocation="X.laevis" geneName="X.laevis_ehhadh.S_peroxisomal_bifunctional_enzyme"></leaf>
+                  </eventsRec>
+                </clade>
+              </clade>
+              <clade>
+                <name>n83</name>
+                <confidence>1.0</confidence>
+                <branch_length>0.1569964335</branch_length>
+                <eventsRec>
+                  <speciation speciesLocation="Clupeocephala"></speciation>
+                </eventsRec>
+                <clade>
+                  <name>n81</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>0.1458852707</branch_length>
+                  <eventsRec>
+                    <speciation speciesLocation="Euteleosteomorpha"></speciation>
+                  </eventsRec>
+                  <clade>
+                    <name>G.aculeatus_ehhadh_peroxisomal_bifunctional_enzyme</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>0.2376156209</branch_length>
+                    <eventsRec>
+                      <leaf speciesLocation="G.aculeatus" geneName="G.aculeatus_ehhadh_peroxisomal_bifunctional_enzyme"></leaf>
+                    </eventsRec>
+                  </clade>
+                  <clade>
+                    <name>S.salar_ehhadh_peroxisomal_bifunctional_enzyme</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>0.2167696302</branch_length>
+                    <eventsRec>
+                      <leaf speciesLocation="S.salar" geneName="S.salar_ehhadh_peroxisomal_bifunctional_enzyme"></leaf>
+                    </eventsRec>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>D.rerio_ehhadh_peroxisomal_bifunctional_enzyme</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>0.2932282643</branch_length>
+                  <eventsRec>
+                    <leaf speciesLocation="D.rerio" geneName="D.rerio_ehhadh_peroxisomal_bifunctional_enzyme"></leaf>
+                  </eventsRec>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <name>C.carcharias*LOST</name>
+              <confidence>1.0</confidence>
+              <branch_length>1.0</branch_length>
+              <eventsRec>
+                <loss speciesLocation="C.carcharias"></loss>
+              </eventsRec>
+            </clade>
+          </clade>
+          <clade>
+            <name>n111</name>
+            <confidence>1.0</confidence>
+            <branch_length>1.461184167</branch_length>
+            <eventsRec>
+              <duplication speciesLocation="Gnathostomata"></duplication>
+            </eventsRec>
+            <clade>
+              <name>n109</name>
+              <confidence>1.0</confidence>
+              <branch_length>0.0775398761</branch_length>
+              <eventsRec>
+                <duplication speciesLocation="Gnathostomata"></duplication>
+              </eventsRec>
+              <clade>
+                <name>n107</name>
+                <confidence>1.0</confidence>
+                <branch_length>0.0196703562</branch_length>
+                <eventsRec>
+                  <duplication speciesLocation="Gnathostomata"></duplication>
+                </eventsRec>
+                <clade>
+                  <name>n105</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>0.0342252033</branch_length>
+                  <eventsRec>
+                    <duplication speciesLocation="Gnathostomata"></duplication>
+                  </eventsRec>
+                  <clade>
+                    <name>n99</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>0.03537389</branch_length>
+                    <eventsRec>
+                      <duplication speciesLocation="Gnathostomata"></duplication>
+                    </eventsRec>
+                    <clade>
+                      <name>n95</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>0.0597401265</branch_length>
+                      <eventsRec>
+                        <speciation speciesLocation="Gnathostomata"></speciation>
+                      </eventsRec>
+                      <clade>
+                        <name>r125</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>1.0</branch_length>
+                        <eventsRec>
+                          <speciation speciesLocation="Euteleostomi"></speciation>
+                        </eventsRec>
+                        <clade>
+                          <name>n93</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>0.0994561748</branch_length>
+                          <eventsRec>
+                            <duplication speciesLocation="Clupeocephala"></duplication>
+                          </eventsRec>
+                          <clade>
+                            <name>n91</name>
+                            <confidence>1.0</confidence>
+                            <branch_length>0.0370497649</branch_length>
+                            <eventsRec>
+                              <speciation speciesLocation="Clupeocephala"></speciation>
+                            </eventsRec>
+                            <clade>
+                              <name>n89</name>
+                              <confidence>1.0</confidence>
+                              <branch_length>0.0276285354</branch_length>
+                              <eventsRec>
+                                <speciation speciesLocation="Euteleosteomorpha"></speciation>
+                              </eventsRec>
+                              <clade>
+                                <name>n87</name>
+                                <confidence>1.0</confidence>
+                                <branch_length>0.0762051647</branch_length>
+                                <eventsRec>
+                                  <duplication speciesLocation="S.salar"></duplication>
+                                </eventsRec>
+                                <clade>
+                                  <name>S.salar_hadhab_hydroxyacylCoA_dehydrogenase_trifunctional_multien</name>
+                                  <confidence>1.0</confidence>
+                                  <branch_length>0.0269486261</branch_length>
+                                  <eventsRec>
+                                    <leaf speciesLocation="S.salar" geneName="S.salar_hadhab_hydroxyacylCoA_dehydrogenase_trifunctional_multien"></leaf>
+                                  </eventsRec>
+                                </clade>
+                                <clade>
+                                  <name>S.salar_LOC106611334_trifunctional_enzyme_subunit_alpha_mitochond</name>
+                                  <confidence>1.0</confidence>
+                                  <branch_length>0.0279858691</branch_length>
+                                  <eventsRec>
+                                    <leaf speciesLocation="S.salar" geneName="S.salar_LOC106611334_trifunctional_enzyme_subunit_alpha_mitochond"></leaf>
+                                  </eventsRec>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>G.aculeatus_hadhab_hydroxyacylCoA_dehydrogenase_trifunctional_mul</name>
+                                <confidence>1.0</confidence>
+                                <branch_length>0.1037041894</branch_length>
+                                <eventsRec>
+                                  <leaf speciesLocation="G.aculeatus" geneName="G.aculeatus_hadhab_hydroxyacylCoA_dehydrogenase_trifunctional_mul"></leaf>
+                                </eventsRec>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>D.rerio_hadhab_hydroxyacylCoA_dehydrogenase_trifunctional_multien</name>
+                              <confidence>1.0</confidence>
+                              <branch_length>0.1204572037</branch_length>
+                              <eventsRec>
+                                <leaf speciesLocation="D.rerio" geneName="D.rerio_hadhab_hydroxyacylCoA_dehydrogenase_trifunctional_multien"></leaf>
+                              </eventsRec>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>r123</name>
+                            <confidence>1.0</confidence>
+                            <branch_length>1.0</branch_length>
+                            <eventsRec>
+                              <speciation speciesLocation="Clupeocephala"></speciation>
+                            </eventsRec>
+                            <clade>
+                              <name>D.rerio_hadhaa_hydroxyacylCoA_dehydrogenase_trifunctional_multien</name>
+                              <confidence>1.0</confidence>
+                              <branch_length>0.1784215113</branch_length>
+                              <eventsRec>
+                                <leaf speciesLocation="D.rerio" geneName="D.rerio_hadhaa_hydroxyacylCoA_dehydrogenase_trifunctional_multien"></leaf>
+                              </eventsRec>
+                            </clade>
+                            <clade>
+                              <name>Euteleosteomorpha*LOST</name>
+                              <confidence>1.0</confidence>
+                              <branch_length>1.0</branch_length>
+                              <eventsRec>
+                                <loss speciesLocation="Euteleosteomorpha"></loss>
+                              </eventsRec>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Tetrapoda*LOST</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>1.0</branch_length>
+                          <eventsRec>
+                            <loss speciesLocation="Tetrapoda"></loss>
+                          </eventsRec>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>C.carcharias_LOC121278346_trifunctional_enzyme_subunit_alpha_mito</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>0.2302144399</branch_length>
+                        <eventsRec>
+                          <leaf speciesLocation="C.carcharias" geneName="C.carcharias_LOC121278346_trifunctional_enzyme_subunit_alpha_mito"></leaf>
+                        </eventsRec>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>r131</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>1.0</branch_length>
+                      <eventsRec>
+                        <speciation speciesLocation="Gnathostomata"></speciation>
+                      </eventsRec>
+                      <clade>
+                        <name>r129</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>1.0</branch_length>
+                        <eventsRec>
+                          <speciation speciesLocation="Euteleostomi"></speciation>
+                        </eventsRec>
+                        <clade>
+                          <name>r127</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>1.0</branch_length>
+                          <eventsRec>
+                            <speciation speciesLocation="Tetrapoda"></speciation>
+                          </eventsRec>
+                          <clade>
+                            <name>n98</name>
+                            <confidence>1.0</confidence>
+                            <branch_length>0.0922295043</branch_length>
+                            <eventsRec>
+                              <duplication speciesLocation="X.laevis"></duplication>
+                            </eventsRec>
+                            <clade>
+                              <name>X.laevis_hadha.S_hydroxyacylCoA_dehydrogenase_trifunctional_multi</name>
+                              <confidence>1.0</confidence>
+                              <branch_length>0.0131648734</branch_length>
+                              <eventsRec>
+                                <leaf speciesLocation="X.laevis" geneName="X.laevis_hadha.S_hydroxyacylCoA_dehydrogenase_trifunctional_multi"></leaf>
+                              </eventsRec>
+                            </clade>
+                            <clade>
+                              <name>X.laevis_hadha.L_trifunctional_enzyme_subunit_alpha_mitochondrial</name>
+                              <confidence>1.0</confidence>
+                              <branch_length>0.0173796261</branch_length>
+                              <eventsRec>
+                                <leaf speciesLocation="X.laevis" geneName="X.laevis_hadha.L_trifunctional_enzyme_subunit_alpha_mitochondrial"></leaf>
+                              </eventsRec>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>Amniota*LOST</name>
+                            <confidence>1.0</confidence>
+                            <branch_length>1.0</branch_length>
+                            <eventsRec>
+                              <loss speciesLocation="Amniota"></loss>
+                            </eventsRec>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Clupeocephala*LOST</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>1.0</branch_length>
+                          <eventsRec>
+                            <loss speciesLocation="Clupeocephala"></loss>
+                          </eventsRec>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>C.carcharias*LOST</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>1.0</branch_length>
+                        <eventsRec>
+                          <loss speciesLocation="C.carcharias"></loss>
+                        </eventsRec>
+                      </clade>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>r145</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>1.0</branch_length>
+                    <eventsRec>
+                      <speciation speciesLocation="Gnathostomata"></speciation>
+                    </eventsRec>
+                    <clade>
+                      <name>r143</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>1.0</branch_length>
+                      <eventsRec>
+                        <speciation speciesLocation="Euteleostomi"></speciation>
+                      </eventsRec>
+                      <clade>
+                        <name>r141</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>1.0</branch_length>
+                        <eventsRec>
+                          <speciation speciesLocation="Tetrapoda"></speciation>
+                        </eventsRec>
+                        <clade>
+                          <name>r139</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>1.0</branch_length>
+                          <eventsRec>
+                            <speciation speciesLocation="Amniota"></speciation>
+                          </eventsRec>
+                          <clade>
+                            <name>n104</name>
+                            <confidence>1.0</confidence>
+                            <branch_length>0.1590206349</branch_length>
+                            <eventsRec>
+                              <duplication speciesLocation="Boreoeutheria"></duplication>
+                            </eventsRec>
+                            <clade>
+                              <name>n102</name>
+                              <confidence>1.0</confidence>
+                              <branch_length>0.0228078659</branch_length>
+                              <eventsRec>
+                                <speciation speciesLocation="Boreoeutheria"></speciation>
+                              </eventsRec>
+                              <clade>
+                                <name>H.sapiens_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial_</name>
+                                <confidence>1.0</confidence>
+                                <branch_length>0.0640125295</branch_length>
+                                <eventsRec>
+                                  <leaf speciesLocation="H.sapiens" geneName="H.sapiens_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial_"></leaf>
+                                </eventsRec>
+                              </clade>
+                              <clade>
+                                <name>r133</name>
+                                <confidence>1.0</confidence>
+                                <branch_length>1.0</branch_length>
+                                <eventsRec>
+                                  <speciation speciesLocation="Laurasiatheria"></speciation>
+                                </eventsRec>
+                                <clade>
+                                  <name>E.caballus_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial</name>
+                                  <confidence>1.0</confidence>
+                                  <branch_length>0.0293784891</branch_length>
+                                  <eventsRec>
+                                    <leaf speciesLocation="E.caballus" geneName="E.caballus_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial"></leaf>
+                                  </eventsRec>
+                                </clade>
+                                <clade>
+                                  <name>F.catus*LOST</name>
+                                  <confidence>1.0</confidence>
+                                  <branch_length>1.0</branch_length>
+                                  <eventsRec>
+                                    <loss speciesLocation="F.catus"></loss>
+                                  </eventsRec>
+                                </clade>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>r137</name>
+                              <confidence>1.0</confidence>
+                              <branch_length>1.0</branch_length>
+                              <eventsRec>
+                                <speciation speciesLocation="Boreoeutheria"></speciation>
+                              </eventsRec>
+                              <clade>
+                                <name>r135</name>
+                                <confidence>1.0</confidence>
+                                <branch_length>1.0</branch_length>
+                                <eventsRec>
+                                  <speciation speciesLocation="Laurasiatheria"></speciation>
+                                </eventsRec>
+                                <clade>
+                                  <name>F.catus_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial</name>
+                                  <confidence>1.0</confidence>
+                                  <branch_length>0.0466731755</branch_length>
+                                  <eventsRec>
+                                    <leaf speciesLocation="F.catus" geneName="F.catus_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial"></leaf>
+                                  </eventsRec>
+                                </clade>
+                                <clade>
+                                  <name>E.caballus*LOST</name>
+                                  <confidence>1.0</confidence>
+                                  <branch_length>1.0</branch_length>
+                                  <eventsRec>
+                                    <loss speciesLocation="E.caballus"></loss>
+                                  </eventsRec>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>H.sapiens*LOST</name>
+                                <confidence>1.0</confidence>
+                                <branch_length>1.0</branch_length>
+                                <eventsRec>
+                                  <loss speciesLocation="H.sapiens"></loss>
+                                </eventsRec>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>Sauria*LOST</name>
+                            <confidence>1.0</confidence>
+                            <branch_length>1.0</branch_length>
+                            <eventsRec>
+                              <loss speciesLocation="Sauria"></loss>
+                            </eventsRec>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>X.laevis*LOST</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>1.0</branch_length>
+                          <eventsRec>
+                            <loss speciesLocation="X.laevis"></loss>
+                          </eventsRec>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Clupeocephala*LOST</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>1.0</branch_length>
+                        <eventsRec>
+                          <loss speciesLocation="Clupeocephala"></loss>
+                        </eventsRec>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>C.carcharias*LOST</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>1.0</branch_length>
+                      <eventsRec>
+                        <loss speciesLocation="C.carcharias"></loss>
+                      </eventsRec>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>r155</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>1.0</branch_length>
+                  <eventsRec>
+                    <speciation speciesLocation="Gnathostomata"></speciation>
+                  </eventsRec>
+                  <clade>
+                    <name>r153</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>1.0</branch_length>
+                    <eventsRec>
+                      <speciation speciesLocation="Euteleostomi"></speciation>
+                    </eventsRec>
+                    <clade>
+                      <name>r151</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>1.0</branch_length>
+                      <eventsRec>
+                        <speciation speciesLocation="Tetrapoda"></speciation>
+                      </eventsRec>
+                      <clade>
+                        <name>r149</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>1.0</branch_length>
+                        <eventsRec>
+                          <speciation speciesLocation="Amniota"></speciation>
+                        </eventsRec>
+                        <clade>
+                          <name>r147</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>1.0</branch_length>
+                          <eventsRec>
+                            <speciation speciesLocation="Sauria"></speciation>
+                          </eventsRec>
+                          <clade>
+                            <name>S.townsendi_HADHA_trifunctional_enzyme_subunit_alpha_mitochondria</name>
+                            <confidence>1.0</confidence>
+                            <branch_length>0.1276495082</branch_length>
+                            <eventsRec>
+                              <leaf speciesLocation="S.townsendi" geneName="S.townsendi_HADHA_trifunctional_enzyme_subunit_alpha_mitochondria"></leaf>
+                            </eventsRec>
+                          </clade>
+                          <clade>
+                            <name>Archelosauria*LOST</name>
+                            <confidence>1.0</confidence>
+                            <branch_length>1.0</branch_length>
+                            <eventsRec>
+                              <loss speciesLocation="Archelosauria"></loss>
+                            </eventsRec>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Boreoeutheria*LOST</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>1.0</branch_length>
+                          <eventsRec>
+                            <loss speciesLocation="Boreoeutheria"></loss>
+                          </eventsRec>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>X.laevis*LOST</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>1.0</branch_length>
+                        <eventsRec>
+                          <loss speciesLocation="X.laevis"></loss>
+                        </eventsRec>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>Clupeocephala*LOST</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>1.0</branch_length>
+                      <eventsRec>
+                        <loss speciesLocation="Clupeocephala"></loss>
+                      </eventsRec>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>C.carcharias*LOST</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>1.0</branch_length>
+                    <eventsRec>
+                      <loss speciesLocation="C.carcharias"></loss>
+                    </eventsRec>
+                  </clade>
+                </clade>
+              </clade>
+              <clade>
+                <name>r167</name>
+                <confidence>1.0</confidence>
+                <branch_length>1.0</branch_length>
+                <eventsRec>
+                  <speciation speciesLocation="Gnathostomata"></speciation>
+                </eventsRec>
+                <clade>
+                  <name>r165</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>1.0</branch_length>
+                  <eventsRec>
+                    <speciation speciesLocation="Euteleostomi"></speciation>
+                  </eventsRec>
+                  <clade>
+                    <name>r163</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>1.0</branch_length>
+                    <eventsRec>
+                      <speciation speciesLocation="Tetrapoda"></speciation>
+                    </eventsRec>
+                    <clade>
+                      <name>r161</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>1.0</branch_length>
+                      <eventsRec>
+                        <speciation speciesLocation="Amniota"></speciation>
+                      </eventsRec>
+                      <clade>
+                        <name>r159</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>1.0</branch_length>
+                        <eventsRec>
+                          <speciation speciesLocation="Sauria"></speciation>
+                        </eventsRec>
+                        <clade>
+                          <name>r157</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>1.0</branch_length>
+                          <eventsRec>
+                            <speciation speciesLocation="Archelosauria"></speciation>
+                          </eventsRec>
+                          <clade>
+                            <name>C.mydas_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial_is</name>
+                            <confidence>1.0</confidence>
+                            <branch_length>0.1053149491</branch_length>
+                            <eventsRec>
+                              <leaf speciesLocation="C.mydas" geneName="C.mydas_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial_is"></leaf>
+                            </eventsRec>
+                          </clade>
+                          <clade>
+                            <name>G.gallus*LOST</name>
+                            <confidence>1.0</confidence>
+                            <branch_length>1.0</branch_length>
+                            <eventsRec>
+                              <loss speciesLocation="G.gallus"></loss>
+                            </eventsRec>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>S.townsendi*LOST</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>1.0</branch_length>
+                          <eventsRec>
+                            <loss speciesLocation="S.townsendi"></loss>
+                          </eventsRec>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Boreoeutheria*LOST</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>1.0</branch_length>
+                        <eventsRec>
+                          <loss speciesLocation="Boreoeutheria"></loss>
+                        </eventsRec>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>X.laevis*LOST</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>1.0</branch_length>
+                      <eventsRec>
+                        <loss speciesLocation="X.laevis"></loss>
+                      </eventsRec>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>Clupeocephala*LOST</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>1.0</branch_length>
+                    <eventsRec>
+                      <loss speciesLocation="Clupeocephala"></loss>
+                    </eventsRec>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>C.carcharias*LOST</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>1.0</branch_length>
+                  <eventsRec>
+                    <loss speciesLocation="C.carcharias"></loss>
+                  </eventsRec>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <name>r179</name>
+              <confidence>1.0</confidence>
+              <branch_length>1.0</branch_length>
+              <eventsRec>
+                <speciation speciesLocation="Gnathostomata"></speciation>
+              </eventsRec>
+              <clade>
+                <name>r177</name>
+                <confidence>1.0</confidence>
+                <branch_length>1.0</branch_length>
+                <eventsRec>
+                  <speciation speciesLocation="Euteleostomi"></speciation>
+                </eventsRec>
+                <clade>
+                  <name>r175</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>1.0</branch_length>
+                  <eventsRec>
+                    <speciation speciesLocation="Tetrapoda"></speciation>
+                  </eventsRec>
+                  <clade>
+                    <name>r173</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>1.0</branch_length>
+                    <eventsRec>
+                      <speciation speciesLocation="Amniota"></speciation>
+                    </eventsRec>
+                    <clade>
+                      <name>r171</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>1.0</branch_length>
+                      <eventsRec>
+                        <speciation speciesLocation="Sauria"></speciation>
+                      </eventsRec>
+                      <clade>
+                        <name>r169</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>1.0</branch_length>
+                        <eventsRec>
+                          <speciation speciesLocation="Archelosauria"></speciation>
+                        </eventsRec>
+                        <clade>
+                          <name>G.gallus_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>0.0365353787</branch_length>
+                          <eventsRec>
+                            <leaf speciesLocation="G.gallus" geneName="G.gallus_HADHA_trifunctional_enzyme_subunit_alpha_mitochondrial"></leaf>
+                          </eventsRec>
+                        </clade>
+                        <clade>
+                          <name>C.mydas*LOST</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>1.0</branch_length>
+                          <eventsRec>
+                            <loss speciesLocation="C.mydas"></loss>
+                          </eventsRec>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>S.townsendi*LOST</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>1.0</branch_length>
+                        <eventsRec>
+                          <loss speciesLocation="S.townsendi"></loss>
+                        </eventsRec>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>Boreoeutheria*LOST</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>1.0</branch_length>
+                      <eventsRec>
+                        <loss speciesLocation="Boreoeutheria"></loss>
+                      </eventsRec>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>X.laevis*LOST</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>1.0</branch_length>
+                    <eventsRec>
+                      <loss speciesLocation="X.laevis"></loss>
+                    </eventsRec>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>Clupeocephala*LOST</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>1.0</branch_length>
+                  <eventsRec>
+                    <loss speciesLocation="Clupeocephala"></loss>
+                  </eventsRec>
+                </clade>
+              </clade>
+              <clade>
+                <name>C.carcharias*LOST</name>
+                <confidence>1.0</confidence>
+                <branch_length>1.0</branch_length>
+                <eventsRec>
+                  <loss speciesLocation="C.carcharias"></loss>
+                </eventsRec>
+              </clade>
+            </clade>
+          </clade>
+        </clade>
+      </clade>
+    </phylogeny>
+  </recGeneTree>
+</recPhylo>
