@@ -83,7 +83,56 @@ alignbuddy -pi ~/lab04-$MYGIT/HADHA/HADHA.homologs.al.fas | awk ' (NR>2)  { for 
 END{ print(100*sum/num) }' 
 (Using AlignBuddy to calculate the average percent identity of the alignment)
 
-# Step 3: 
+# Step 3: Creating Phylogenetic Tree 
 Commands: 
+
+mkdir ~/lab05-$MYGIT/HADHA
+cd ~/lab05-$MYGIT/HADHA
+pwd  
+(Create new directory with gene family name, go to that directory, and make sure in that directory)
+
+sed 's/ /_/g'  ~/lab04-$MYGIT/HADHA/HADHA.homologs.al.fas | seqkit grep -v -r -p "dupelabel" >  ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.fas  
+(Remove sequences from the alignment that contains a duplicate tag or with the "dupelabel", replace the spaces with underscores in the alignment, save file as a copy)
+
+iqtree -s ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.fas -bb 1000 -nt 2   
+(Create a phylogenetic tree using IQ-Tree, containing 1000 bootstrap replicates and 2 CPU threads, this finds the maximum likehood tree estimate)
+
+nw_display ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.fas.treefile  
+(Displays the created phylogentic tree, newick formatted, view of the unrooted tree)
+
+Rscript --vanilla ~/lab05-$MYGIT/plotUnrooted.R  ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.fas.treefile ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.fas.treefile.pdf 0.4 15 
+(Generates a PDF of the unrooted tree using R script, allows the view of the tree with a graphical display, given specific scaling and margins based on the numerical values)
+
+gotree reroot midpoint -i ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.fas.treefile -o ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile  
+(
+
+nw_order -c n ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile  | nw_display -  
+
+convert  ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile.svg  ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile.pdf  
+
+nw_order -c n ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile | nw_display -w 1000 -b 'opacity:0' -s > ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile.svg -  
+
+convert  ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile.svg  ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile.pdf  
+
+nw_order -c n ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.mid.treefile | nw_topology - | nw_display -s -w 1000 > ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.midCl.treefile.svg -  
+
+convert ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.midCl.treefile.svg ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.midCl.treefile.pdf  
+
+nw_reroot ~/lab05-$MYGIT/HADHA/HADHA.homologsf.al.fas.treefile H.sapiens_HBG1_hemoglobin_subunit_gamma1 H.sapiens_HBG2_hemoglobin_subunit_gamma2 H.sapiens_HBB_hemoglobin_subunit_beta H.sapiens_HBD_hemoglobin_subunit_delta > ~/lab05-$MYGIT/HADHA/HADHA.homologsf.outgroupbeta.treefile  
+
+nw_order -c n ~/lab05-$MYGIT/HADHA/HADHA.homologsf.outgroupbeta.treefile | nw_topology - | nw_display -s -w 1000 > ~/lab05-$MYGIT/HADHA/HADHA.homologsf.outgroupbeta.treefile.svg -  
+
+convert ~/lab05-$MYGIT/HADHA/HADHA.homologsf.outgroupbeta.treefile.svg ~/lab05-$MYGIT/HADHA/HADHA.homologsf.outgroupbeta.treefile.pdf  
+
+echo "(((((((((G.gallus_HADH_hydroxyacylcoenzyme_A_dehydrogenase_mitochondrial:0.2566511529, ...
+...);" > ~/lab05-$MYGIT/HADHA.tree  
+
+nw_display ~/lab05-$MYGIT/HADHA.tree  
+
+nw_display -s ~/lab05-$MYGIT/HADHA.tree > ~/lab05-$MYGIT/HADHA.tree.svg  
+
+convert ~/lab05-$MYGIT/HADHA.tree.svg ~/lab05-$MYGIT/HADHA.tree.pdf  
+
+Rscript --vanilla ~/lab05-$MYGIT/plotUnrooted.R ~/lab05-$MYGIT/HADHA.tree ~/lab05-$MYGIT/HADHA.unrooted.pdf 0.4 35  
 
 
